@@ -210,54 +210,100 @@ export default function TripPlanner() {
 // Client-side fallback generator (used when API is unavailable)
 function generateFallback(numDays, budget, group, interests) {
   const templates = [
-    { title: 'Arrival & South Bali', area: 'Seminyak' },
-    { title: 'Ubud Cultural Day', area: 'Ubud' },
-    { title: 'Adventure Day', area: 'North Bali' },
-    { title: 'Beach & Chill', area: 'Uluwatu' },
+    { title: 'Arrival & South Bali', area: 'Seminyak/Petitenget' },
+    { title: 'Ubud Cultural Day', area: 'Ubud Center' },
+    { title: 'Adventure Day', area: 'North & Central Bali' },
+    { title: 'Beach & Chill', area: 'Uluwatu / Bingin' },
     { title: 'Nusa Penida Trip', area: 'Nusa Penida' },
     { title: 'Wellness & Spa', area: 'Ubud' },
-    { title: 'Canggu Explorer', area: 'Canggu' },
-    { title: 'Waterfalls & Nature', area: 'Central Bali' },
+    { title: 'Canggu Explorer', area: 'Canggu / Batu Bolong' },
+    { title: 'Waterfalls & Nature', area: 'Munduk / Bedugul' },
     { title: 'East Bali Gems', area: 'Amed / Sidemen' },
     { title: 'Free Day & Shopping', area: 'Seminyak' },
     { title: 'Sunset & Nightlife', area: 'Canggu' },
-    { title: 'Temple Circuit', area: 'Island-wide' },
-    { title: 'Volcano Sunrise', area: 'Kintamani' },
-    { title: 'Departure Day', area: 'Near Airport' },
+    { title: 'Temple Circuit', area: 'Besakih / Lempuyang' },
+    { title: 'Volcano Sunrise', area: 'Kintamani / Mount Batur' },
+    { title: 'Departure Day', area: 'Jimbaran / Near Airport' },
   ];
+
+  const breakfasts = [
+    { name: '☕ Breakfast at Crate Cafe (Canggu)', price: '80K IDR' },
+    { name: '🥞 Smoothing bowls at Nalu Bowls', price: '75K IDR' },
+    { name: '🥐 Coffee & pastries at Baked.', price: '90K IDR' },
+    { name: '🍳 Morning feast at Sisterfields Cafe', price: '120K IDR' },
+    { name: '🥑 Avo toast at Milk & Madu', price: '95K IDR' },
+    { name: '☕ River-view breakfast at Pison Ubud', price: '85K IDR' }
+  ];
+
+  const lunches = [
+    { name: '🍜 Authentic Nasi Campur at Warung Wardani', price: '45K IDR' },
+    { name: '🍛 Famous Babi Guling at Pak Malen', price: '60K IDR' },
+    { name: '🥗 Organic lunch at Alchemy Bali', price: '110K IDR' },
+    { name: '🍗 Nasi Ayam Kedewatan Bu Mangku', price: '35K IDR' },
+    { name: '🌮 Tacos & Margaritas at Motel Mexicola', price: '150K IDR' },
+    { name: '🍕 Woodfired Pizza at Luigi\'s Hot Pizza', price: '130K IDR' },
+    { name: '🌶️ Bebek Bengil (Dirty Duck Diner)', price: '180K IDR' }
+  ];
+
+  const dinners = [
+    { name: '🌅 Seafood BBQ at Jimbaran Bay', price: '250K IDR' },
+    { name: '🍹 Sunset dinner at La Lucciola (Seminyak)', price: '350K IDR' },
+    { name: '🥩 Premium cuts at Boy\'N\'Cow', price: '500K IDR' },
+    { name: '🍣 High-end Japanese at Rayjin Teppanyaki', price: '400K IDR' },
+    { name: '🍛 Fine Indonesian dining at Merah Putih', price: '450K IDR' },
+    { name: '🌴 Oceanfront dinner at La Brisa (Canggu)', price: '300K IDR' },
+    { name: '✨ Tasting menu at Locavore NXT (Ubud)', price: '1.2M IDR' }
+  ];
+
   const activities = {
-    surfing: { name: '🏄 Surf session', price: '100K IDR' },
-    wellness: { name: '🧘 Yoga class at The Yoga Barn', price: '130K IDR' },
-    temples: { name: '🏛️ Tirta Empul holy water temple', price: '50K IDR' },
-    beaches: { name: '🌊 Beach day at Padang Padang', price: 'Free' },
-    nature: { name: '🌿 Tegallalang Rice Terraces', price: '20K IDR' },
-    food: { name: '🍜 Local warung lunch', price: '30K IDR' },
-    nightlife: { name: '🎉 Sunset drinks at Potato Head', price: '150K IDR' },
-    photography: { name: '📸 Handara Gate sunrise', price: '50K IDR' },
-    snorkeling: { name: '🤿 Snorkeling at Blue Lagoon', price: '400K IDR' },
-    adventure: { name: '🏍️ ATV ride through jungle', price: '500K IDR' },
-    spa: { name: '💆 Balinese massage', price: '120K IDR' },
-    art: { name: '🎨 Silver jewelry making', price: '350K IDR' },
+    surfing: { name: '🏄 Surf session at Batu Bolong beach', price: '150K IDR (inc. board)' },
+    wellness: { name: '🧘 Vinyasa Yoga class at The Yoga Barn', price: '140K IDR' },
+    temples: { name: '🏛️ Blessing at Tirta Empul holy water temple', price: '50K IDR' },
+    beaches: { name: '🌊 Beach club day at Sundays Beach Club', price: '450K IDR (min spend)' },
+    nature: { name: '🌿 Walk through Campuhan Ridge & Tegallalang', price: '25K IDR' },
+    food: { name: '🌶️ Balinese Cooking Class in Ubud', price: '350K IDR' },
+    nightlife: { name: '🎉 Sunset drinks at Savaya Dayclub', price: '300K IDR' },
+    photography: { name: '📸 Handara Gate & Ulun Danu sunrise photo walk', price: '75K IDR' },
+    snorkeling: { name: '🤿 Manta Ray snorkeling at Nusa Penida', price: '450K IDR' },
+    adventure: { name: '🏍️ Jungle ATV ride in Payangan', price: '500K IDR' },
+    spa: { name: '💆 90-min Balinese massage at Bodyworks', price: '250K IDR' },
+    art: { name: '🎨 Silver jewelry making class in Celuk', price: '400K IDR' },
   };
 
   const days = [];
-  const costPerDay = budget === 'budget' ? [20,40] : budget === 'luxury' ? [100,200] : [45,100];
+  const costPerDay = budget === 'budget' ? [20,40] : budget === 'luxury' ? [150,300] : [60,120];
 
   for (let i = 0; i < numDays; i++) {
     const t = templates[i % templates.length];
+    
+    // Pick random meals for variety
+    const breakfast = breakfasts[Math.floor(Math.random() * breakfasts.length)];
+    const lunch = lunches[Math.floor(Math.random() * lunches.length)];
+    const dinner = dinners[Math.floor(Math.random() * dinners.length)];
+
     const dayActivities = [
-      { time: '8:00 AM', name: '☕ Breakfast at villa / café', price: '40K IDR' },
+      { time: '8:30 AM', name: breakfast.name, price: breakfast.price },
     ];
+    
+    // Add specific interest activities
     interests.slice(0, 3).forEach(int => {
-      if (activities[int]) dayActivities.push({ time: `${9 + dayActivities.length}:00 AM`, ...activities[int] });
+      if (activities[int]) dayActivities.push({ time: `${10 + dayActivities.length}:00 AM`, ...activities[int] });
     });
-    dayActivities.push({ time: '7:00 PM', name: '🌅 Dinner at beachfront restaurant', price: '250K IDR' });
+    
+    // Add lunch around 1 or 2 PM
+    dayActivities.push({ time: '1:30 PM', name: lunch.name, price: lunch.price });
+    
+    // Add a chill afternoon activity
+    if (!interests.includes('spa')) dayActivities.push({ time: '4:00 PM', name: '🌴 Relax by the pool / explore local boutiques', price: 'Free' });
+    
+    // Add dinner
+    dayActivities.push({ time: '7:30 PM', name: dinner.name, price: dinner.price });
 
     days.push({ day: i + 1, title: t.title, area: t.area, activities: dayActivities });
   }
 
   return {
-    title: `Your Perfect ${numDays}-Day Bali Adventure`,
+    title: `Your Perfect ${numDays}-Day Bali Itinerary`,
     total_estimate_min_usd: costPerDay[0] * numDays,
     total_estimate_max_usd: costPerDay[1] * numDays,
     days,
