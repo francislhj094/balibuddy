@@ -1,5 +1,5 @@
 export default function robots() {
-  const baseUrl = 'https://balibuddy.vercel.app';
+  const baseUrl = 'https://balibuddy.online';
   
   return {
     rules: {

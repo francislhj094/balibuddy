@@ -5,7 +5,7 @@ import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 
 export const metadata = {
-  metadataBase: new URL(process.env.NEXT_PUBLIC_APP_URL || 'https://balibuddy.vercel.app'),
+  metadataBase: new URL(process.env.NEXT_PUBLIC_APP_URL || 'https://balibuddy.online'),
   title: {
     default: 'BaliBuddy — AI Bali Trip Planner & Trusted Booking',
     template: '%s | BaliBuddy',
