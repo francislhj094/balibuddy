@@ -17,7 +17,7 @@ export default function Services() {
   const [bookingDetails, setBookingDetails] = useState(null);
   const [form, setForm] = useState({ name: '', whatsapp: '', date: '', location: '', notes: '' });
 
-  const waNumber = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || '628XXXXXXXXXX';
+  const waNumber = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || '';
 
   const generateRef = () => {
     const chars = 'ABCDEFGHJKLMNPQRSTUVWXYZ23456789';

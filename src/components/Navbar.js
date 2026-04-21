@@ -44,7 +44,7 @@ export default function Navbar() {
             </NavLink>
           ))}
           <a
-            href={`https://wa.me/${process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || '628XXXXXXXXXX'}`}
+            href={`https://wa.me/${process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || ''}`}
             target="_blank"
             rel="noopener noreferrer"
             className="text-sm font-semibold px-5 py-2 rounded-full bg-gradient-to-r from-cyan-500 to-cyan-400 text-gray-900 hover:shadow-lg hover:shadow-cyan-500/25 transition-all"
@@ -69,7 +69,7 @@ export default function Navbar() {
             </NavLink>
           ))}
           <a
-            href={`https://wa.me/${process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || '628XXXXXXXXXX'}`}
+            href={`https://wa.me/${process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || ''}`}
             target="_blank" rel="noopener noreferrer"
             className="block mt-4 text-center py-3 rounded-full bg-gradient-to-r from-cyan-500 to-cyan-400 text-gray-900 font-semibold"
           >
