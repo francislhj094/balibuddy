@@ -1,5 +1,5 @@
 export default function sitemap() {
-  const baseUrl = process.env.NEXT_PUBLIC_APP_URL || 'https://balibuddy.vercel.app';
+  const baseUrl = 'https://balibuddy.vercel.app';
   
   // Since we don't have a live DB yet, we map the hardcoded articles from earlier
   const staticArticles = [
