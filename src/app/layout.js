@@ -14,7 +14,7 @@ export const metadata = {
   keywords: ['bali trip planner', 'bali itinerary', 'bali fair prices', 'bali airport transfer', 'bali scams', 'bali travel guide 2026', 'bali driver booking'],
   authors: [{ name: 'BaliBuddy' }],
   verification: {
-    google: 'cgcaKUUmfMqQR3QSPwagl44E6wEfrsmgleHt9QkZF7k',
+    google: 'BMqK5hLlOoM7ftQUnfeiQoklyJmVI_9Bzje_a379SGI',
   },
   openGraph: {
     type: 'website',
