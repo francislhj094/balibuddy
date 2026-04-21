@@ -1,5 +1,5 @@
 export default function WhatsAppCTA() {
-  const waNumber = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || '';
+  const waNumber = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || '6282341834263';
   return (
     <section id="whatsapp" className="py-16 px-6">
       <div className="max-w-6xl mx-auto">

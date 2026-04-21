@@ -194,7 +194,7 @@ export default function TripPlanner() {
               <a href="/services" className="block text-center py-3 rounded-full bg-gradient-to-r from-cyan-500 to-cyan-400 text-gray-900 font-semibold text-sm">
                 📋 Book These Services
               </a>
-              <a href={`https://wa.me/${process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || ''}?text=${encodeURIComponent(`Hi BaliBuddy! I just made a ${days}-day itinerary and want to book services.`)}`}
+              <a href={`https://wa.me/${process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || '6282341834263'}?text=${encodeURIComponent(`Hi BaliBuddy! I just made a ${days}-day itinerary and want to book services.`)}`}
                 target="_blank" rel="noopener noreferrer"
                 className="block text-center py-3 rounded-full bg-[#25D366] text-white font-semibold text-sm">
                 💬 Send to My WhatsApp

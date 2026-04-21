@@ -10,7 +10,7 @@ const services = [
 ];
 
 export default function Services() {
-  const waNumber = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || '';
+  const waNumber = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || '6282341834263';
 
   return (
     <section id="services" className="py-24 px-6">
