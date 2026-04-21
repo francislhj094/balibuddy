@@ -2,9 +2,7 @@
 import Hero from '@/components/Hero';
 import TrustBar from '@/components/TrustBar';
 import ProblemSection from '@/components/ProblemSection';
-import TripPlanner from '@/components/TripPlanner';
 import PriceGuide from '@/components/PriceGuide';
-import Services from '@/components/Services';
 import HowItWorks from '@/components/HowItWorks';
 import Testimonials from '@/components/Testimonials';
 import Checklist from '@/components/Checklist';
@@ -54,9 +52,7 @@ export default function Home() {
       <Hero />
       <TrustBar />
       <ProblemSection />
-      <TripPlanner />
       <PriceGuide />
-      <Services />
       <HowItWorks />
       <Testimonials />
       <Checklist />

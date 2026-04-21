@@ -207,7 +207,7 @@ export default function ChecklistPage() {
           <p className="text-slate-400 mb-6 max-w-lg mx-auto">
             Don&apos;t stress about day 1. Pre-book a vetted driver who&apos;ll meet you at arrivals with your name on a sign.
           </p>
-          <Link href="/#services" className="inline-block px-8 py-3 rounded-full bg-gradient-to-r from-cyan-500 to-cyan-400 text-gray-900 font-semibold text-sm shadow-md hover:shadow-cyan-500/25 transition-all hover:-translate-y-0.5">
+          <Link href="/services" className="inline-block px-8 py-3 rounded-full bg-gradient-to-r from-cyan-500 to-cyan-400 text-gray-900 font-semibold text-sm shadow-md hover:shadow-cyan-500/25 transition-all hover:-translate-y-0.5">
             Book Airport Transfer — IDR 200K
           </Link>
         </div>

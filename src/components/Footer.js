@@ -2,13 +2,13 @@ import Link from 'next/link';
 
 export default function Footer() {
   const columns = [
-    { title: 'Plan', links: [{name: 'AI Trip Planner', href: '/#planner'}, {name: 'Fair Price Guide', href: '/prices'}, {name: 'Arrival Checklist', href: '/checklist'}, {name: 'Bali Travel Blog', href: '/blog'}] },
-    { title: 'Book', links: [{name: 'Airport Transfer', href: '/#services'}, {name: 'Private Driver', href: '/#services'}, {name: 'Day Tours', href: '/#services'}, {name: 'Spa & Wellness', href: '/#services'}] },
+    { title: 'Plan', links: [{name: 'AI Trip Planner', href: '/planner'}, {name: 'Fair Price Guide', href: '/prices'}, {name: 'Arrival Checklist', href: '/checklist'}, {name: 'Bali Travel Blog', href: '/blog'}] },
+    { title: 'Book', links: [{name: 'Airport Transfer', href: '/services'}, {name: 'Private Driver', href: '/services'}, {name: 'Day Tours', href: '/services'}, {name: 'Spa & Wellness', href: '/services'}] },
     { title: 'Company', links: [{name: 'About Us', href: '#'}, {name: 'For Drivers', href: '#'}, {name: 'Terms of Service', href: '/terms'}, {name: 'Privacy Policy', href: '/privacy'}] },
   ];
 
   const FooterLink = ({ href, children }) => {
-    if (href.startsWith('#') || href.startsWith('/#')) {
+    if (href.startsWith('#')) {
       return <a href={href} className="block text-sm text-slate-400 py-1.5 hover:text-white transition-colors">{children}</a>;
     }
     return <Link href={href} className="block text-sm text-slate-400 py-1.5 hover:text-white transition-colors">{children}</Link>;

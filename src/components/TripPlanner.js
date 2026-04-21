@@ -191,7 +191,7 @@ export default function TripPlanner() {
             </div>
 
             <div className="grid sm:grid-cols-2 gap-3">
-              <a href="#services" className="block text-center py-3 rounded-full bg-gradient-to-r from-cyan-500 to-cyan-400 text-gray-900 font-semibold text-sm">
+              <a href="/services" className="block text-center py-3 rounded-full bg-gradient-to-r from-cyan-500 to-cyan-400 text-gray-900 font-semibold text-sm">
                 📋 Book These Services
               </a>
               <a href={`https://wa.me/${process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || ''}?text=${encodeURIComponent(`Hi BaliBuddy! I just made a ${days}-day itinerary and want to book services.`)}`}

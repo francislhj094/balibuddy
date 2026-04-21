@@ -63,7 +63,7 @@ export default function Hero() {
 
         {/* CTA Buttons */}
         <div className="flex flex-wrap gap-4 justify-center mb-16 animate-fade-in-up delay-300">
-          <a href="#planner" className="px-8 py-4 rounded-full bg-gradient-to-r from-cyan-500 to-cyan-400 text-gray-900 font-semibold text-base shadow-lg shadow-cyan-500/25 hover:shadow-xl hover:shadow-cyan-500/30 hover:-translate-y-0.5 transition-all">
+          <a href="/planner" className="px-8 py-4 rounded-full bg-gradient-to-r from-cyan-500 to-cyan-400 text-gray-900 font-semibold text-base shadow-lg shadow-cyan-500/25 hover:shadow-xl hover:shadow-cyan-500/30 hover:-translate-y-0.5 transition-all">
             Plan My Trip — Free
           </a>
           <a href="#prices" className="px-8 py-4 rounded-full border border-white/15 text-white font-medium hover:bg-white/5 hover:border-white/25 transition-all">

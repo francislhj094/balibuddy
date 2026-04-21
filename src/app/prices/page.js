@@ -168,7 +168,7 @@ export default function PricesPage() {
             <p className="text-slate-400 mb-6 max-w-lg mx-auto">
               Book through BaliBuddy and get fair prices automatically with vetted, English-speaking drivers and guides.
             </p>
-            <Link href="/#services" className="inline-block px-8 py-3 rounded-full bg-gradient-to-r from-cyan-500 to-cyan-400 text-gray-900 font-semibold text-sm shadow-md hover:shadow-cyan-500/25 transition-all hover:-translate-y-0.5">
+            <Link href="/services" className="inline-block px-8 py-3 rounded-full bg-gradient-to-r from-cyan-500 to-cyan-400 text-gray-900 font-semibold text-sm shadow-md hover:shadow-cyan-500/25 transition-all hover:-translate-y-0.5">
               Browse Services & Book
             </Link>
           </div>

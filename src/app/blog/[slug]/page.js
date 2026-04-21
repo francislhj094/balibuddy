@@ -271,7 +271,7 @@ const articles = {
 
       <h2>Our Recommendation: Split Your Trip</h2>
       <p>For a 7-day trip, do <strong>2 nights Seminyak → 3 nights Ubud → 2 nights Canggu/Uluwatu</strong>. This gives you the best of each area without the FOMO. Use a private driver (500K–650K IDR/day) for the transfers — they double as sightseeing stops.</p>
-      <p>Use our <strong><a href="/#planner">AI Trip Planner</a></strong> to automatically build a split itinerary with transfers optimized for your dates and interests.</p>
+      <p>Use our <strong><a href="/planner">AI Trip Planner</a></strong> to automatically build a split itinerary with transfers optimized for your dates and interests.</p>
 
       <h2>Related Guides</h2>
       <p>🗓️ See our <a href="/blog/bali-itinerary-7-days-2026">7-day itinerary</a> for a detailed day-by-day plan across all three areas.</p>
@@ -749,7 +749,7 @@ const articles = {
       <p><strong>Estimated 3-day cost:</strong> $70–90 for activities + $30–60 for food = <strong>$100–150 total</strong></p>
 
       <h2>Booking Through BaliBuddy</h2>
-      <p>We can connect you with <strong>vetted, English-speaking wellness practitioners</strong> and arrange your spa packages, healing sessions, and yoga retreat bookings at fair local prices. Just tell our <a href="/#planner">AI Trip Planner</a> your wellness goals, and we'll build a custom wellness itinerary for you.</p>
+      <p>We can connect you with <strong>vetted, English-speaking wellness practitioners</strong> and arrange your spa packages, healing sessions, and yoga retreat bookings at fair local prices. Just tell our <a href="/planner">AI Trip Planner</a> your wellness goals, and we'll build a custom wellness itinerary for you.</p>
 
       <h2>Related Guides</h2>
       <p>💰 See <a href="/prices">fair spa and massage prices</a> on our price comparison guide.</p>
@@ -1180,7 +1180,7 @@ export default async function BlogPost({ params }) {
           <div className="mt-16 pt-8 border-t border-white/10 text-center">
             <h3 className="font-display text-2xl mb-4">Ready to skip the planning?</h3>
             <p className="text-slate-400 mb-6">Use our AI to instantly build an itinerary matching these tips.</p>
-            <Link href="/#planner" className="px-8 py-3 rounded-full bg-gradient-to-r from-cyan-500 to-cyan-400 text-gray-900 font-semibold text-sm shadow-md hover:shadow-cyan-500/25 transition-all">
+            <Link href="/planner" className="px-8 py-3 rounded-full bg-gradient-to-r from-cyan-500 to-cyan-400 text-gray-900 font-semibold text-sm shadow-md hover:shadow-cyan-500/25 transition-all">
               Open the AI Trip Planner
             </Link>
           </div>

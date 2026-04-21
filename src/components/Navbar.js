@@ -13,9 +13,9 @@ export default function Navbar() {
   }, []);
 
   const links = [
-    { href: '#planner', label: 'Trip Planner' },
+    { href: '/planner', label: 'Trip Planner' },
     { href: '/prices', label: 'Fair Prices' },
-    { href: '#services', label: 'Book Services' },
+    { href: '/services', label: 'Book Services' },
     { href: '/blog', label: 'Blog' },
     { href: '/checklist', label: 'Checklist' },
   ];
