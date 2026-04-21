@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BaliBuddy — Your Trusted Bali Trip Planner</title>
+<meta name="description" content="Plan your perfect Bali trip with AI. Get personalized itineraries, fair prices, and book trusted services. Never get scammed again.">
+<meta property="og:title" content="BaliBuddy — Your Trusted Bali Trip Planner">
+<meta property="og:description" content="Plan your perfect Bali trip with AI. Get personalized itineraries, fair prices, and book trusted services.">
+<meta property="og:image" content="https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=1200&q=80">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌴</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="#" class="logo">
+      <span class="logo-icon">🌴</span>
+      <span class="logo-text">BaliBuddy</span>
+    </a>
+    <div class="nav-links">
+      <a href="#planner">Trip Planner</a>
+      <a href="#prices">Fair Prices</a>
+      <a href="#services">Book Services</a>
+      <a href="#whatsapp" class="nav-cta">💬 WhatsApp Us</a>
+    </div>
+    <button class="mobile-menu-btn" onclick="toggleMenu()">☰</button>
+  </div>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#planner" onclick="toggleMenu()">Trip Planner</a>
+    <a href="#prices" onclick="toggleMenu()">Fair Prices</a>
+    <a href="#services" onclick="toggleMenu()">Book Services</a>
+    <a href="#whatsapp" onclick="toggleMenu()">💬 WhatsApp Us</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-particles"></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <div class="hero-badge">🛡️ Trusted by 10,000+ travelers</div>
+    <h1>Plan Your Perfect <br><span class="gradient-text">Bali Trip</span> in 60 Seconds</h1>
+    <p class="hero-sub">AI-powered itineraries. Transparent pricing. Vetted local services.<br>Never overpay or get scammed again.</p>
+    <div class="hero-actions">
+      <a href="#planner" class="btn btn-primary">Plan My Trip — Free</a>
+      <a href="#prices" class="btn btn-ghost">See Fair Prices →</a>
+    </div>
+    <div class="hero-stats">
+      <div class="stat">
+        <strong>7M+</strong>
+        <span>Tourists/Year</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat">
+        <strong>$0</strong>
+        <span>Planning Cost</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat">
+        <strong>500+</strong>
+        <span>Vetted Drivers</span>
+      </div>
+    </div>
+  </div>
+  <div class="hero-scroll">
+    <span>Scroll to explore</span>
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+<!-- TRUST BAR -->
+<section class="trust-bar">
+  <div class="container">
+    <div class="trust-items">
+      <div class="trust-item">
+        <span class="trust-icon">🔒</span>
+        <span>Verified Drivers</span>
+      </div>
+      <div class="trust-item">
+        <span class="trust-icon">💰</span>
+        <span>Fair Fixed Prices</span>
+      </div>
+      <div class="trust-item">
+        <span class="trust-icon">🌍</span>
+        <span>15+ Languages</span>
+      </div>
+      <div class="trust-item">
+        <span class="trust-icon">⭐</span>
+        <span>4.9/5 Rating</span>
+      </div>
+      <div class="trust-item">
+        <span class="trust-icon">📱</span>
+        <span>WhatsApp Support</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROBLEM SECTION -->
+<section class="problem-section">
+  <div class="container">
+    <div class="section-label">The Problem</div>
+    <h2>Bali Is Amazing. <span class="gradient-text">Planning It Shouldn't Be Painful.</span></h2>
+    <div class="problem-grid">
+      <div class="problem-card">
+        <div class="problem-emoji">😤</div>
+        <h3>Overcharged Everywhere</h3>
+        <p>Airport taxi quotes 500K IDR for a ride that should cost 175K. Tour operators charge 3x the fair price. You never know what's real.</p>
+      </div>
+      <div class="problem-card">
+        <div class="problem-emoji">😰</div>
+        <h3>Hours of Research</h3>
+        <p>Reddit threads, TikTok videos, Facebook groups, outdated blogs — you spend more time planning than actually enjoying Bali.</p>
+      </div>
+      <div class="problem-card">
+        <div class="problem-emoji">🤷</div>
+        <h3>Who Do You Trust?</h3>
+        <p>Random WhatsApp drivers, unreviewed tour operators, fake Gojek jackets — it's impossible to know who's legit as a first-timer.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- AI TRIP PLANNER -->
+<section class="planner-section" id="planner">
+  <div class="container">
+    <div class="section-label">AI Trip Planner</div>
+    <h2>Your Perfect Bali Itinerary <span class="gradient-text">in 60 Seconds</span></h2>
+    <p class="section-sub">Tell us about your trip and our AI builds a personalized day-by-day plan with fair price estimates.</p>
+    
+    <div class="planner-wrapper">
+      <div class="planner-form" id="plannerForm">
+        <div class="form-grid">
+          <div class="form-group">
+            <label>When are you going?</label>
+            <input type="date" id="tripDate" class="form-input">
+          </div>
+          <div class="form-group">
+            <label>How many days?</label>
+            <select id="tripDays" class="form-input">
+              <option value="3">3 Days</option>
+              <option value="5">5 Days</option>
+              <option value="7" selected>7 Days</option>
+              <option value="10">10 Days</option>
+              <option value="14">14 Days</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Travel style?</label>
+            <select id="tripBudget" class="form-input">
+              <option value="budget">Budget (< $50/day)</option>
+              <option value="mid" selected>Mid-Range ($50-150/day)</option>
+              <option value="luxury">Luxury ($150+/day)</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Group size?</label>
+            <select id="tripGroup" class="form-input">
+              <option value="solo">Solo</option>
+              <option value="couple" selected>Couple</option>
+              <option value="friends">Friends (3-6)</option>
+              <option value="family">Family with kids</option>
+              <option value="large">Large group (7+)</option>
+            </select>
+          </div>
+        </div>
+        
+        <div class="form-group">
+          <label>What are you into? (pick all that apply)</label>
+          <div class="interest-tags">
+            <button class="tag active" onclick="toggleTag(this)">🏄 Surfing</button>
+            <button class="tag" onclick="toggleTag(this)">🧘 Wellness & Yoga</button>
+            <button class="tag active" onclick="toggleTag(this)">🏛️ Temples & Culture</button>
+            <button class="tag" onclick="toggleTag(this)">🌊 Beaches</button>
+            <button class="tag" onclick="toggleTag(this)">🌿 Nature & Hiking</button>
+            <button class="tag active" onclick="toggleTag(this)">🍜 Food & Dining</button>
+            <button class="tag" onclick="toggleTag(this)">🎉 Nightlife</button>
+            <button class="tag" onclick="toggleTag(this)">📸 Photography</button>
+            <button class="tag" onclick="toggleTag(this)">🤿 Snorkeling & Diving</button>
+            <button class="tag" onclick="toggleTag(this)">🏍️ Adventure</button>
+            <button class="tag" onclick="toggleTag(this)">💆 Spa & Massage</button>
+            <button class="tag" onclick="toggleTag(this)">🎨 Art & Crafts</button>
+          </div>
+        </div>
+        
+        <button class="btn btn-primary btn-full" onclick="generateItinerary()">
+          ✨ Generate My Free Itinerary
+        </button>
+      </div>
+      
+      <!-- ITINERARY RESULT -->
+      <div class="itinerary-result" id="itineraryResult" style="display:none;">
+        <div class="itinerary-header">
+          <div>
+            <h3>Your Bali Itinerary</h3>
+            <p class="itinerary-meta" id="itineraryMeta"></p>
+          </div>
+          <div class="itinerary-actions">
+            <button class="btn btn-sm" onclick="shareItinerary()">📤 Share</button>
+            <button class="btn btn-sm" onclick="resetPlanner()">✏️ Edit</button>
+          </div>
+        </div>
+        <div class="itinerary-days" id="itineraryDays"></div>
+        <div class="itinerary-footer">
+          <div class="total-estimate" id="totalEstimate"></div>
+          <button class="btn btn-primary" onclick="bookServices()">📋 Book These Services</button>
+          <button class="btn btn-whatsapp" onclick="sendToWhatsApp()">💬 Send to My WhatsApp</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAIR PRICE GUIDE -->
+<section class="prices-section" id="prices">
+  <div class="container">
+    <div class="section-label">Fair Price Guide</div>
+    <h2>What Things <span class="gradient-text">Actually Cost</span> in Bali</h2>
+    <p class="section-sub">Screenshot this. Share it with your friends. Never overpay again.</p>
+    
+    <div class="price-categories">
+      <button class="price-tab active" onclick="showPriceCategory('transport', this)">🚗 Transport</button>
+      <button class="price-tab" onclick="showPriceCategory('tours', this)">🗺️ Tours</button>
+      <button class="price-tab" onclick="showPriceCategory('wellness', this)">💆 Wellness</button>
+      <button class="price-tab" onclick="showPriceCategory('food', this)">🍜 Food & Drink</button>
+      <button class="price-tab" onclick="showPriceCategory('rentals', this)">🏍️ Rentals</button>
+    </div>
+    
+    <div class="price-table-wrapper">
+      <table class="price-table" id="priceTable">
+        <thead>
+          <tr>
+            <th>Service</th>
+            <th class="fair">Fair Price</th>
+            <th class="scam">Tourist Price</th>
+            <th>You Save</th>
+          </tr>
+        </thead>
+        <tbody id="priceTableBody"></tbody>
+      </table>
+    </div>
+    
+    <div class="price-note">
+      💡 <strong>Pro tip:</strong> Show this page to your driver or vendor on your phone. Fair vendors will respect these prices — scammers will walk away. Either way, you win.
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES / BOOKING -->
+<section class="services-section" id="services">
+  <div class="container">
+    <div class="section-label">Trusted Services</div>
+    <h2>Book With <span class="gradient-text">Confidence</span></h2>
+    <p class="section-sub">Every driver and guide is personally vetted, reviewed, and insured. Fixed prices. No surprises.</p>
+    
+    <div class="services-grid">
+      <div class="service-card">
+        <div class="service-img" style="background-image: url('https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?auto=format&fit=crop&w=600&q=80');">
+          <span class="service-emoji">✈️</span>
+        </div>
+        <div class="service-body">
+          <div class="service-badge">Most Popular</div>
+          <h3>Airport Transfer</h3>
+          <p>AC car, meet & greet at arrivals, help with bags. No meter tricks, no surprises.</p>
+          <div class="service-price">
+            <span class="price-from">From</span>
+            <span class="price-amount">IDR 200K</span>
+            <span class="price-note-sm">(~$12 USD)</span>
+          </div>
+          <button class="btn btn-primary btn-full" onclick="bookService('airport-transfer')">Book Transfer</button>
+        </div>
+      </div>
+      
+      <div class="service-card">
+        <div class="service-img" style="background-image: url('https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&fit=crop&w=600&q=80');">
+          <span class="service-emoji">🚗</span>
+        </div>
+        <div class="service-body">
+          <h3>Private Day Driver</h3>
+          <p>English-speaking driver for 10 hours. Go wherever you want. Fuel and parking included.</p>
+          <div class="service-price">
+            <span class="price-from">From</span>
+            <span class="price-amount">IDR 600K</span>
+            <span class="price-note-sm">(~$37 USD)</span>
+          </div>
+          <button class="btn btn-primary btn-full" onclick="bookService('day-driver')">Book Driver</button>
+        </div>
+      </div>
+      
+      <div class="service-card">
+        <div class="service-img" style="background-image: url('https://images.unsplash.com/photo-1555400038-63f5ba517a47?auto=format&fit=crop&w=600&q=80');">
+          <span class="service-emoji">🌋</span>
+        </div>
+        <div class="service-body">
+          <h3>Ubud Day Tour</h3>
+          <p>Rice terraces, monkey forest, waterfall, coffee plantation, temple. Lunch included.</p>
+          <div class="service-price">
+            <span class="price-from">From</span>
+            <span class="price-amount">IDR 500K</span>
+            <span class="price-note-sm">(~$31 USD)</span>
+          </div>
+          <button class="btn btn-primary btn-full" onclick="bookService('ubud-tour')">Book Tour</button>
+        </div>
+      </div>
+      
+      <div class="service-card">
+        <div class="service-img" style="background-image: url('https://images.unsplash.com/photo-1577717903315-1691ae25ab3f?auto=format&fit=crop&w=600&q=80');">
+          <span class="service-emoji">🤿</span>
+        </div>
+        <div class="service-body">
+          <h3>Nusa Penida Tour</h3>
+          <p>Kelingking Beach, Angel's Billabong, Broken Beach, Crystal Bay. Boat + driver included.</p>
+          <div class="service-price">
+            <span class="price-from">From</span>
+            <span class="price-amount">IDR 750K</span>
+            <span class="price-note-sm">(~$46 USD)</span>
+          </div>
+          <button class="btn btn-primary btn-full" onclick="bookService('nusa-penida')">Book Tour</button>
+        </div>
+      </div>
+      
+      <div class="service-card">
+        <div class="service-img" style="background-image: url('https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&w=600&q=80');">
+          <span class="service-emoji">💆</span>
+        </div>
+        <div class="service-body">
+          <h3>Spa & Wellness Package</h3>
+          <p>2-hour Balinese massage + flower bath + body scrub at a vetted premium spa.</p>
+          <div class="service-price">
+            <span class="price-from">From</span>
+            <span class="price-amount">IDR 350K</span>
+            <span class="price-note-sm">(~$22 USD)</span>
+          </div>
+          <button class="btn btn-primary btn-full" onclick="bookService('spa')">Book Spa</button>
+        </div>
+      </div>
+      
+      <div class="service-card">
+        <div class="service-img" style="background-image: url('https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=600&q=80');">
+          <span class="service-emoji">📱</span>
+        </div>
+        <div class="service-body">
+          <h3>Bali eSIM + Setup</h3>
+          <p>30-day unlimited data eSIM. Pre-activated before you land. No SIM card hassle.</p>
+          <div class="service-price">
+            <span class="price-from">From</span>
+            <span class="price-amount">$8 USD</span>
+            <span class="price-note-sm">&nbsp;</span>
+          </div>
+          <button class="btn btn-primary btn-full" onclick="bookService('esim')">Get eSIM</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="how-section">
+  <div class="container">
+    <div class="section-label">How It Works</div>
+    <h2>From Planning to Paradise <span class="gradient-text">in 3 Steps</span></h2>
+    <div class="steps-grid">
+      <div class="step">
+        <div class="step-number">01</div>
+        <h3>Plan for Free</h3>
+        <p>Use our AI trip planner to create a personalized itinerary based on your style, budget, and interests.</p>
+      </div>
+      <div class="step-arrow">→</div>
+      <div class="step">
+        <div class="step-number">02</div>
+        <h3>Book Trusted Services</h3>
+        <p>Book vetted drivers, tours, and experiences at transparent, fixed prices. No haggling, no scams.</p>
+      </div>
+      <div class="step-arrow">→</div>
+      <div class="step">
+        <div class="step-number">03</div>
+        <h3>Enjoy Bali</h3>
+        <p>Your driver is waiting at the airport. Your itinerary is on your phone. Just relax and explore.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="testimonials-section">
+  <div class="container">
+    <div class="section-label">Loved by Travelers</div>
+    <h2>Real Stories from <span class="gradient-text">Real Travelers</span></h2>
+    <div class="testimonials-grid">
+      <div class="testimonial">
+        <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+        <p>"Saved me from getting scammed at the airport on my first day. The fair price guide is literally a lifesaver. Showed it to every driver and vendor."</p>
+        <div class="testimonial-author">
+          <div class="avatar">🇦🇺</div>
+          <div>
+            <strong>Sarah M.</strong>
+            <span>Melbourne, Australia</span>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial">
+        <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+        <p>"The AI itinerary was spot-on. It knew exactly which areas matched my vibe. And the private driver was the best decision of my trip — worth every rupiah."</p>
+        <div class="testimonial-author">
+          <div class="avatar">🇬🇧</div>
+          <div>
+            <strong>James T.</strong>
+            <span>London, UK</span>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial">
+        <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+        <p>"My friends and I used to spend WEEKS planning Bali trips. This time it took 5 minutes. The WhatsApp support answered every question instantly, even at 2am."</p>
+        <div class="testimonial-author">
+          <div class="avatar">🇮🇳</div>
+          <div>
+            <strong>Priya K.</strong>
+            <span>Mumbai, India</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRE-ARRIVAL CHECKLIST -->
+<section class="checklist-section">
+  <div class="container">
+    <div class="checklist-card">
+      <div class="checklist-left">
+        <div class="section-label">Free Resource</div>
+        <h2>2026 Bali<br>Arrival Checklist</h2>
+        <p>Don't miss any of the new rules. Tourist levy, proof of funds, customs app, cultural dos & don'ts — all in one page.</p>
+        <button class="btn btn-primary" onclick="downloadChecklist()">📋 Get Free Checklist</button>
+      </div>
+      <div class="checklist-right">
+        <div class="checklist-items">
+          <div class="check-item">✅ Pay Tourist Levy (IDR 150K) online before arrival</div>
+          <div class="check-item">✅ Download "All Indonesia" arrivals app</div>
+          <div class="check-item">✅ Prepare proof of funds (~$2,000 USD)</div>
+          <div class="check-item">✅ Get eSIM before boarding</div>
+          <div class="check-item">✅ Book airport transfer in advance</div>
+          <div class="check-item">✅ Pack sarong for temple visits</div>
+          <div class="check-item">✅ Get International Driving Permit (if riding scooter)</div>
+          <div class="check-item coming-soon">+ 8 more items...</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHATSAPP CTA -->
+<section class="whatsapp-section" id="whatsapp">
+  <div class="container">
+    <div class="wa-card">
+      <div class="wa-icon">💬</div>
+      <h2>Got Questions? Ask Our AI on WhatsApp</h2>
+      <p>Message us anytime in any language. Get instant answers about Bali — prices, safety, itineraries, bookings, and more.</p>
+      <a href="https://wa.me/628XXXXXXXXXX?text=Hi%20BaliBuddy!%20I'm%20planning%20a%20trip%20to%20Bali" class="btn btn-whatsapp btn-lg" target="_blank">
+        Chat on WhatsApp →
+      </a>
+      <span class="wa-note">Average response time: under 30 seconds</span>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <span class="logo"><span class="logo-icon">🌴</span> <span class="logo-text">BaliBuddy</span></span>
+        <p>Your trusted AI-powered travel companion for Bali. Plan smarter, pay fairly, travel safely.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Plan</h4>
+        <a href="#planner">AI Trip Planner</a>
+        <a href="#prices">Fair Price Guide</a>
+        <a href="#">Arrival Checklist</a>
+        <a href="#">Bali Travel Blog</a>
+      </div>
+      <div class="footer-links">
+        <h4>Book</h4>
+        <a href="#services">Airport Transfer</a>
+        <a href="#services">Private Driver</a>
+        <a href="#services">Day Tours</a>
+        <a href="#services">Spa & Wellness</a>
+      </div>
+      <div class="footer-links">
+        <h4>Company</h4>
+        <a href="#">About Us</a>
+        <a href="#">For Drivers</a>
+        <a href="#">Partner With Us</a>
+        <a href="#">Terms & Privacy</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 BaliBuddy. Made with ☀️ in Bali.</p>
+    </div>
+  </div>
+</footer>
+
+<!-- BOOKING MODAL -->
+<div class="modal-overlay" id="bookingModal">
+  <div class="modal">
+    <button class="modal-close" onclick="closeModal()">✕</button>
+    <h3 id="modalTitle">Book Service</h3>
+    <div class="modal-form">
+      <div class="form-group">
+        <label>Your Name</label>
+        <input type="text" class="form-input" placeholder="e.g. Sarah Miller">
+      </div>
+      <div class="form-group">
+        <label>WhatsApp Number</label>
+        <input type="tel" class="form-input" placeholder="e.g. +61 4XX XXX XXX">
+      </div>
+      <div class="form-group">
+        <label>Date Needed</label>
+        <input type="date" class="form-input">
+      </div>
+      <div class="form-group">
+        <label>Pickup Location / Hotel</label>
+        <input type="text" class="form-input" placeholder="e.g. Alila Seminyak">
+      </div>
+      <div class="form-group">
+        <label>Notes (optional)</label>
+        <textarea class="form-input" rows="3" placeholder="e.g. 2 large suitcases, arriving at 10pm"></textarea>
+      </div>
+      <button class="btn btn-primary btn-full" onclick="submitBooking()">Confirm Booking via WhatsApp</button>
+      <p class="modal-note">You'll receive a WhatsApp confirmation within 5 minutes with your driver's name, photo, and car details.</p>
+    </div>
+  </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
