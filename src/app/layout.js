@@ -5,7 +5,7 @@ import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 
 export const metadata = {
-  metadataBase: new URL(process.env.NEXT_PUBLIC_APP_URL || 'https://balibuddy.com'),
+  metadataBase: new URL(process.env.NEXT_PUBLIC_APP_URL || 'https://balibuddy.vercel.app'),
   title: {
     default: 'BaliBuddy — AI Bali Trip Planner & Trusted Booking',
     template: '%s | BaliBuddy',
@@ -13,6 +13,9 @@ export const metadata = {
   description: 'Plan your perfect Bali trip in 60 seconds with AI. Get personalized itineraries, fair prices, and book vetted drivers & tours. Never get scammed again.',
   keywords: ['bali trip planner', 'bali itinerary', 'bali fair prices', 'bali airport transfer', 'bali scams', 'bali travel guide 2026', 'bali driver booking'],
   authors: [{ name: 'BaliBuddy' }],
+  verification: {
+    google: 'cgcaKUUmfMqQR3QSPwagl44E6wEfrsmgleHt9QkZF7k',
+  },
   openGraph: {
     type: 'website',
     locale: 'en_US',
