@@ -44,7 +44,14 @@ const articles = {
       <h2>Day 7: Departure</h2>
       <p>Pack up, do some last-minute <strong>souvenir shopping</strong> at local markets (Krisna is great for bulk gifts). Head to the airport — pre-book your airport transfer for peace of mind. Allow 2 hours for the drive from Uluwatu to DPS, more during peak traffic.</p>
       <h3>Budget Summary</h3>
-      <p>Total estimated cost for 7 days (mid-range): <strong>$500–800 USD per person</strong> including accommodation, food, transport, and activities. Budget travelers can do it for $300–400.</p>
+      <p>Total estimated cost for 7 days (mid-range): <strong>$500–800 USD per person</strong> including accommodation, food, transport, and activities. Budget travelers can do it for $300–400. For a full cost breakdown, see our <a href="/blog/how-much-bali-trip-cost-2026">honest Bali trip cost guide</a>.</p>
+
+      <h2>Related Guides</h2>
+      <p>📋 Use our <a href="/checklist">2026 Bali arrival checklist</a> to make sure you don't forget anything.</p>
+      <p>💰 Check <a href="/prices">what things actually cost in Bali</a> so you never overpay.</p>
+      <p>🛡️ Read about <a href="/blog/bali-scams-avoid-2026">22 common Bali scams</a> before you go.</p>
+      <p>✈️ Don't miss our <a href="/blog/bali-airport-transfer-guide">airport transfer guide</a> for a stress-free arrival.</p>
+      <p>🏝️ Planning a Nusa Penida visit? See our <a href="/blog/nusa-penida-day-trip-guide">complete Nusa Penida day trip guide</a>.</p>
     `
   },
 
@@ -135,6 +142,12 @@ const articles = {
 
       <h2>The Golden Rule</h2>
       <p>Most Balinese people are incredibly warm and honest. These scams come from a small minority targeting tourists. Use common sense, do your research, and pre-book through trusted services like BaliBuddy — and you'll have an amazing, scam-free trip.</p>
+
+      <h2>Related Guides</h2>
+      <p>💰 See <a href="/prices">fair prices for everything in Bali</a> so you know when you're being overcharged.</p>
+      <p>✈️ The airport is scam central — read our <a href="/blog/bali-airport-transfer-guide">Bali airport transfer guide</a>.</p>
+      <p>🆕 First time in Bali? Check <a href="/blog/bali-first-time-tips">25 things I wish I knew before visiting</a>.</p>
+      <p>💵 Understand <a href="/blog/how-much-bali-trip-cost-2026">what a trip actually costs</a> for each budget level.</p>
     `
   },
 
@@ -198,6 +211,12 @@ const articles = {
       5-star resort + fine dining + private driver daily + premium activities + spa packages</p>
 
       <p><em>These figures exclude flights. Add $200–1,500 depending on your origin.</em></p>
+
+      <h2>Related Guides</h2>
+      <p>📊 See our <a href="/prices">interactive Fair Price Guide</a> with tourist price vs fair price comparisons.</p>
+      <p>🎒 Traveling cheap? Read <a href="/blog/bali-budget-travel-2026">how to do Bali on $30/day</a>.</p>
+      <p>📅 Timing matters — see <a href="/blog/best-time-visit-bali-2026">when to visit for the best prices</a>.</p>
+      <p>🗓️ Follow our <a href="/blog/bali-itinerary-7-days-2026">7-day itinerary</a> to see exactly how costs break down day by day.</p>
     `
   },
 
@@ -252,7 +271,13 @@ const articles = {
 
       <h2>Our Recommendation: Split Your Trip</h2>
       <p>For a 7-day trip, do <strong>2 nights Seminyak → 3 nights Ubud → 2 nights Canggu/Uluwatu</strong>. This gives you the best of each area without the FOMO. Use a private driver (500K–650K IDR/day) for the transfers — they double as sightseeing stops.</p>
-      <p>Use our <strong>AI Trip Planner</strong> to automatically build a split itinerary with transfers optimized for your dates and interests.</p>
+      <p>Use our <strong><a href="/#planner">AI Trip Planner</a></strong> to automatically build a split itinerary with transfers optimized for your dates and interests.</p>
+
+      <h2>Related Guides</h2>
+      <p>🗓️ See our <a href="/blog/bali-itinerary-7-days-2026">7-day itinerary</a> for a detailed day-by-day plan across all three areas.</p>
+      <p>💵 Compare costs in each area with our <a href="/blog/how-much-bali-trip-cost-2026">Bali trip cost breakdown</a>.</p>
+      <p>🧘 Heading to Ubud for wellness? Read our <a href="/blog/bali-wellness-retreat-guide">wellness retreat guide</a>.</p>
+      <p>🎒 On a budget? See <a href="/blog/bali-budget-travel-2026">how to do Bali on $30/day</a>.</p>
     `
   },
 
@@ -300,6 +325,12 @@ const articles = {
 
       <h2>Book Your Transfer with BaliBuddy</h2>
       <p>Our airport transfers start at <strong>IDR 200K</strong> and include meet & greet at arrivals, AC vehicle, and a driver you can chat with on WhatsApp to coordinate timing. No surprises, no haggling, no stress on day 1.</p>
+
+      <h2>Related Guides</h2>
+      <p>📋 Don't forget anything — use our <a href="/checklist">Bali arrival checklist</a>.</p>
+      <p>🛡️ Airport scams are covered in our <a href="/blog/bali-scams-avoid-2026">22 Bali scams guide</a>.</p>
+      <p>💰 See all <a href="/prices">fair transport prices</a> including airport transfers and day drivers.</p>
+      <p>🗓️ What to do after you land? Follow our <a href="/blog/bali-itinerary-7-days-2026">7-day itinerary starting from arrival</a>.</p>
     `
   },
 
@@ -357,6 +388,12 @@ const articles = {
 
       <h2>What Most Guides Won't Tell You</h2>
       <p>The roads are genuinely bad — think potholes, steep unpaved hills, and no guardrails. If you have back problems or are pregnant, consider this carefully. The boat crossing can be rough, especially during rainy season. And the island gets HOT — there's very little shade at most viewpoints. Bring more water than you think you need.</p>
+
+      <h2>Related Guides</h2>
+      <p>🗓️ Nusa Penida is Day 5 in our <a href="/blog/bali-itinerary-7-days-2026">perfect 7-day Bali itinerary</a>.</p>
+      <p>💰 See <a href="/prices">fair prices for boat tickets and drivers</a> on our price guide.</p>
+      <p>📅 Best conditions for the crossing? Check our <a href="/blog/best-time-visit-bali-2026">month-by-month weather guide</a>.</p>
+      <p>📋 Pack smart with our <a href="/checklist">Bali arrival checklist</a>.</p>
     `
   },
 
@@ -431,6 +468,12 @@ const articles = {
       <strong>Activity:</strong> $5 (one activity every other day = $2.50 amortized)<br/>
       <strong>Misc:</strong> $2<br/>
       <strong>Total: ~$25–30/day</strong></p>
+
+      <h2>Related Guides</h2>
+      <p>📊 Compare tourist prices vs fair prices on our <a href="/prices">Fair Price Guide</a>.</p>
+      <p>💵 Full cost breakdown at every budget level: <a href="/blog/how-much-bali-trip-cost-2026">How much does a Bali trip actually cost?</a></p>
+      <p>🏠 Where to base yourself? <a href="/blog/canggu-vs-seminyak-vs-ubud">Canggu vs Seminyak vs Ubud comparison</a>.</p>
+      <p>🛡️ Avoid overpaying with our <a href="/blog/bali-scams-avoid-2026">scam avoidance guide</a>.</p>
     `
   },
 
@@ -529,6 +572,12 @@ const articles = {
       <strong>Cheapest:</strong> February<br/>
       <strong>Avoid (for crowds):</strong> July–August, Dec 20–Jan 5<br/>
       <strong>Avoid (for rain):</strong> January–February</p>
+
+      <h2>Related Guides</h2>
+      <p>🗓️ Ready to plan? Use our <a href="/blog/bali-itinerary-7-days-2026">7-day itinerary</a> as your starting point.</p>
+      <p>💵 See <a href="/blog/how-much-bali-trip-cost-2026">how costs change by season</a> in our price breakdown.</p>
+      <p>🆕 First visit? Read <a href="/blog/bali-first-time-tips">25 things to know before going</a>.</p>
+      <p>🧘 Visiting for wellness? Check our <a href="/blog/bali-wellness-retreat-guide">retreat guide</a>.</p>
     `
   },
 
@@ -625,6 +674,13 @@ const articles = {
 
       <h3>25. You'll Want to Come Back</h3>
       <p>This is the one thing every Bali visitor says. The combination of culture, scenery, food, affordability, and warmth of the people is genuinely special. Don't try to see everything in one trip — save some magic for next time.</p>
+
+      <h2>Related Guides</h2>
+      <p>📋 Don't forget anything — <a href="/checklist">complete 2026 arrival checklist</a>.</p>
+      <p>🗓️ Plan your days with our <a href="/blog/bali-itinerary-7-days-2026">7-day itinerary</a>.</p>
+      <p>🛡️ Stay safe: <a href="/blog/bali-scams-avoid-2026">22 scams to avoid</a>.</p>
+      <p>💰 Know your costs: <a href="/prices">fair price guide</a> for every service.</p>
+      <p>🏠 Where to stay? <a href="/blog/canggu-vs-seminyak-vs-ubud">Canggu vs Seminyak vs Ubud</a>.</p>
     `
   },
 
@@ -693,7 +749,13 @@ const articles = {
       <p><strong>Estimated 3-day cost:</strong> $70–90 for activities + $30–60 for food = <strong>$100–150 total</strong></p>
 
       <h2>Booking Through BaliBuddy</h2>
-      <p>We can connect you with <strong>vetted, English-speaking wellness practitioners</strong> and arrange your spa packages, healing sessions, and yoga retreat bookings at fair local prices. Just tell our AI your wellness goals, and we'll build a custom wellness itinerary for you.</p>
+      <p>We can connect you with <strong>vetted, English-speaking wellness practitioners</strong> and arrange your spa packages, healing sessions, and yoga retreat bookings at fair local prices. Just tell our <a href="/#planner">AI Trip Planner</a> your wellness goals, and we'll build a custom wellness itinerary for you.</p>
+
+      <h2>Related Guides</h2>
+      <p>💰 See <a href="/prices">fair spa and massage prices</a> on our price comparison guide.</p>
+      <p>🏠 Why Ubud is the wellness capital: <a href="/blog/canggu-vs-seminyak-vs-ubud">area comparison guide</a>.</p>
+      <p>🗓️ Include wellness in your trip: <a href="/blog/bali-itinerary-7-days-2026">7-day Bali itinerary</a>.</p>
+      <p>📅 Best time for retreats: <a href="/blog/best-time-visit-bali-2026">month-by-month guide</a>.</p>
     `
   },
 };
