@@ -758,6 +758,361 @@ const articles = {
       <p>📅 Best time for retreats: <a href="/blog/best-time-visit-bali-2026">month-by-month guide</a>.</p>
     `
   },
+
+  'best-temples-bali-2026': {
+    title: '10 Best Temples in Bali You Must Visit in 2026 (With Fair Prices)',
+    description: 'From Uluwatu cliffs to Tirta Empul holy springs. The most stunning temples, what they cost, and temple etiquette every visitor needs to know.',
+    category: 'guide',
+    date: '2026-04-18',
+    readTime: '10 min',
+    content: `
+      <h2>Why Bali's Temples Are Special</h2>
+      <p>Bali has over <strong>20,000 Hindu temples</strong> — more than any other place on Earth. They're not just tourist attractions; they're active places of worship woven into daily Balinese life. Visiting temples is one of the most meaningful things you can do on the island.</p>
+
+      <h2>1. Uluwatu Temple (Pura Luhur Uluwatu)</h2>
+      <p><strong>Entry:</strong> 50K IDR ($3) | <strong>Location:</strong> Bukit Peninsula (South Bali)</p>
+      <p>Perched on a dramatic 70-meter cliff overlooking the Indian Ocean, Uluwatu is Bali's most spectacular temple setting. Come at <strong>5:30 PM</strong> for the legendary <strong>Kecak Fire Dance</strong> (100K IDR) — 50+ men chanting in a circle as the sun sets behind the temple. Secure your belongings — the monkeys here are notorious thieves.</p>
+
+      <h2>2. Tirta Empul (Holy Water Temple)</h2>
+      <p><strong>Entry:</strong> 50K IDR ($3) | <strong>Location:</strong> Near Ubud (Central Bali)</p>
+      <p>This is where Balinese Hindus come for <strong>melukat (spiritual purification)</strong>. You walk through 13 sacred fountain spouts, each representing a different blessing. Tourists can participate — bring a change of clothes and a sarong. The experience is genuinely moving, not a tourist show. Go before 9 AM to avoid crowds.</p>
+
+      <h2>3. Tanah Lot</h2>
+      <p><strong>Entry:</strong> 60K IDR ($3.75) | <strong>Location:</strong> Tabanan (Southwest Bali)</p>
+      <p>Bali's most photographed temple sits on a rock formation in the sea, accessible only at low tide. <strong>Sunset is the magic hour</strong> — arrive by 4:30 PM for the best light. The surrounding area is very commercial with souvenir stalls, but the temple itself is breathtaking. Check tide times before visiting.</p>
+
+      <h2>4. Besakih (Mother Temple)</h2>
+      <p><strong>Entry:</strong> 60K IDR ($3.75) | <strong>Location:</strong> Mount Agung slopes (East Bali)</p>
+      <p>Bali's largest and most sacred temple complex, with <strong>86 temples</strong> spread across the slopes of Mount Agung. It's a 90-minute drive from Ubud. Be aware: aggressive "guides" at the entrance will try to charge you 200K+ IDR for a mandatory tour. <strong>You don't need a guide</strong> — politely decline and explore independently.</p>
+
+      <h2>5. Tirta Gangga (Water Palace)</h2>
+      <p><strong>Entry:</strong> 50K IDR ($3) | <strong>Location:</strong> Karangasem (East Bali)</p>
+      <p>A stunning royal water palace with ornamental pools, fountains, and stepping stones over fish ponds. Less crowded than the major temples and incredibly photogenic. You can <strong>swim in the upper pool for an extra 10K IDR</strong>. Combine with a visit to Lempuyang Temple nearby.</p>
+
+      <h2>6. Lempuyang (Gates of Heaven)</h2>
+      <p><strong>Entry:</strong> Donation-based (50K–100K IDR suggested) | <strong>Location:</strong> East Bali</p>
+      <p>Famous for the "Gates of Heaven" photo with Mount Agung framed between split gates. The <strong>queue for the photo can be 2+ hours</strong> during peak times — arrive before 7 AM. Note: the reflection effect in viral photos was created with a mirror held under the camera; the actual ground is stone, not water. Still absolutely worth visiting for the setting.</p>
+
+      <h2>7. Goa Gajah (Elephant Cave)</h2>
+      <p><strong>Entry:</strong> 50K IDR ($3) | <strong>Location:</strong> Near Ubud</p>
+      <p>A 9th-century archaeological site with a carved cave entrance depicting a demon's mouth. Inside the cave are Hindu and Buddhist relics. The bathing fountains outside are beautifully preserved. It's compact — <strong>30–45 minutes is enough</strong> to explore. Great combined with a morning visit to Ubud.</p>
+
+      <h2>8. Ulun Danu Beratan</h2>
+      <p><strong>Entry:</strong> 75K IDR ($4.70) | <strong>Location:</strong> Lake Beratan, Bedugul (Central Highlands)</p>
+      <p>This lakeside temple appears to float on the water and is featured on the Indonesian 50,000 IDR banknote. The <strong>misty mountain setting</strong> makes it feel otherworldly, especially in the early morning. Great combined with a Jatiluwih rice terrace visit or a North Bali day trip.</p>
+
+      <h2>9. Saraswati Temple (Ubud)</h2>
+      <p><strong>Entry:</strong> Free | <strong>Location:</strong> Central Ubud</p>
+      <p>A beautiful lotus pond temple right in the heart of Ubud, dedicated to the Hindu goddess of knowledge and arts. <strong>Free to visit</strong> and stunning for photos, especially when the lotus flowers are blooming (June–September). Starbucks is right next to it — only in Bali.</p>
+
+      <h2>10. Taman Ayun</h2>
+      <p><strong>Entry:</strong> 50K IDR ($3) | <strong>Location:</strong> Mengwi (Central Bali)</p>
+      <p>A UNESCO World Heritage Site surrounded by a moat and beautiful gardens. Much less crowded than the big-name temples. The traditional Balinese architecture is some of the best-preserved on the island. <strong>30–60 minutes</strong> is enough for a relaxed visit.</p>
+
+      <h2>Temple Etiquette</h2>
+      <p><strong>Dress code:</strong> Cover shoulders and knees. Most temples provide sarongs with entry, but bringing your own is easier.<br/>
+      <strong>Menstruation:</strong> Women who are menstruating are traditionally asked not to enter temples. This is a cultural/religious practice, not a tourist rule.<br/>
+      <strong>Offerings:</strong> Don't step on canang sari (flower offerings) on the ground.<br/>
+      <strong>Photography:</strong> Ask before photographing ceremonies or worshippers. Never stand higher than a priest during a ceremony.<br/>
+      <strong>Shoes:</strong> Remove them before entering sacred areas.</p>
+
+      <h2>Related Guides</h2>
+      <p>🗓️ Temples are included in our <a href="/blog/bali-itinerary-7-days-2026">7-day Bali itinerary</a>.</p>
+      <p>💰 See <a href="/prices">fair prices for all activities</a> including temple entries.</p>
+      <p>🛡️ Watch out for temple-related scams in our <a href="/blog/bali-scams-avoid-2026">scam guide</a>.</p>
+      <p>🆕 First time? Read <a href="/blog/bali-first-time-tips">25 essential Bali tips</a> including temple etiquette.</p>
+    `
+  },
+
+  'bali-food-guide-what-to-eat': {
+    title: 'What to Eat in Bali: 20 Must-Try Dishes & Where to Find Them',
+    description: 'From Nasi Goreng to Babi Guling. The essential Bali food guide with fair prices, best warungs, and what to avoid.',
+    category: 'food',
+    date: '2026-04-16',
+    readTime: '11 min',
+    content: `
+      <h2>Balinese Food Is Different from Indonesian Food</h2>
+      <p>Bali has its own unique cuisine influenced by Hindu culture (unlike the rest of Muslim-majority Indonesia). You'll find <strong>pork dishes</strong> that are rare elsewhere in the country, distinctive spice blends, and ceremonial foods you won't see outside the island.</p>
+
+      <h2>The Must-Try Dishes</h2>
+
+      <h3>1. Nasi Goreng (Fried Rice)</h3>
+      <p>Indonesia's national dish. Every warung makes it differently — sweet soy sauce, shrimp paste, egg, and chili are the base. <strong>Fair price: 15K–30K IDR ($0.90–1.85)</strong> at a warung. If you're paying 80K+ IDR, you're at a tourist restaurant.</p>
+
+      <h3>2. Babi Guling (Suckling Pig)</h3>
+      <p>Bali's signature dish — whole roasted pig stuffed with chili, turmeric, and lemongrass. <strong>Ibu Oka</strong> in Ubud is famous (made popular by Anthony Bourdain), but locals say <strong>Warung Babi Guling Pak Malen</strong> in Seminyak is better. Fair price: <strong>40K–60K IDR ($2.50–3.75)</strong> per plate.</p>
+
+      <h3>3. Nasi Campur (Mixed Rice)</h3>
+      <p>A plate of rice with 4–6 small portions of different dishes — vegetables, meat, sambal, peanuts, eggs, tempeh. Every warung's version is different. This is the <strong>best value meal in Bali</strong>. Fair price: <strong>20K–35K IDR ($1.25–2.15)</strong>.</p>
+
+      <h3>4. Satay (Sate)</h3>
+      <p>Grilled meat skewers with peanut sauce. <strong>Sate Lilit</strong> is the Balinese version — minced fish or chicken wrapped around lemongrass sticks. Different from Java's beef satay. Fair price: <strong>15K–25K IDR ($0.90–1.55)</strong> for 5–8 sticks.</p>
+
+      <h3>5. Lawar</h3>
+      <p>A traditional Balinese salad made with shredded vegetables, coconut, and minced meat mixed with spices and sometimes fresh blood (yes, really). It's rich, complex, and unlike anything you've tried. Fair price: <strong>15K–25K IDR</strong>.</p>
+
+      <h3>6. Mie Goreng (Fried Noodles)</h3>
+      <p>The noodle cousin of Nasi Goreng. Egg noodles wok-fried with vegetables, soy sauce, and your choice of protein. Fair price: <strong>15K–30K IDR</strong>.</p>
+
+      <h3>7. Ayam Betutu (Slow-Cooked Chicken)</h3>
+      <p>Chicken stuffed with traditional spice paste and wrapped in banana leaves, then slow-cooked for 6–12 hours. The meat falls off the bone. It's a ceremonial dish that's become a restaurant staple. Fair price: <strong>35K–50K IDR</strong>.</p>
+
+      <h3>8. Bakso (Meatball Soup)</h3>
+      <p>A street food staple — beef meatballs in a clear broth with noodles, tofu, and greens. Listen for the distinctive <strong>"tok tok tok"</strong> sound of the bakso cart rolling through your street. Fair price: <strong>10K–20K IDR</strong>.</p>
+
+      <h3>9. Gado Gado</h3>
+      <p>Steamed vegetables (bean sprouts, cabbage, potatoes, tofu, tempeh) smothered in a thick peanut sauce. The <strong>best vegetarian meal</strong> in Bali that even meat-eaters love. Fair price: <strong>15K–25K IDR</strong>.</p>
+
+      <h3>10. Bebek Goreng (Fried Duck)</h3>
+      <p>Crispy fried duck, often marinated for 24 hours in Balinese spices before deep-frying. <strong>Bebek Bengil</strong> (Dirty Duck Diner) in Ubud started the trend. Fair price: <strong>45K–65K IDR</strong>.</p>
+
+      <h2>Street Food & Snacks</h2>
+      <p><strong>Pisang Goreng:</strong> Fried bananas — 5K–10K IDR. The perfect afternoon snack.<br/>
+      <strong>Martabak:</strong> Stuffed pancake (sweet or savory) — 15K–30K IDR. Best late-night food.<br/>
+      <strong>Jaje Bali:</strong> Traditional Balinese sweets made from rice flour and palm sugar — 2K–5K IDR each.<br/>
+      <strong>Klepon:</strong> Green rice flour balls filled with liquid palm sugar — 5K IDR for a bag. Addictive.<br/>
+      <strong>Es Campur:</strong> Shaved ice with fruit, jelly, and condensed milk — 10K–15K IDR. Perfect for the heat.</p>
+
+      <h2>Drinks</h2>
+      <p><strong>Bintang Beer:</strong> 25K–35K IDR at a warung, 50K–80K IDR at a bar.<br/>
+      <strong>Fresh Coconut:</strong> 10K–20K IDR from street vendors.<br/>
+      <strong>Kopi Bali:</strong> Traditional Balinese coffee — 5K–10K IDR. Strong and unfiltered.<br/>
+      <strong>Jamu:</strong> Traditional herbal health drink (turmeric, ginger, honey) — 10K–15K IDR. An acquired taste but great for digestion.<br/>
+      <strong>Arak:</strong> Local rice wine spirit. Be cautious — counterfeit arak has caused deaths. Only drink at reputable bars.</p>
+
+      <h2>Where to Eat</h2>
+      <h3>Best Warungs (Local Restaurants)</h3>
+      <p><strong>Warung Biah Biah</strong> (Ubud) — Authentic Balinese with rice terrace views.<br/>
+      <strong>Warung Murah</strong> (Canggu) — "Murah" means cheap. Lives up to its name.<br/>
+      <strong>Nasi Ayam Kedewatan</strong> (Ubud) — Famous for its chicken rice.<br/>
+      <strong>Warung Makan Bu Rus</strong> (Seminyak) — Locals' secret spot for Nasi Campur.</p>
+
+      <h2>Food Safety Tips</h2>
+      <p><strong>1.</strong> Eat at busy warungs — high turnover means fresh food.<br/>
+      <strong>2.</strong> Avoid raw vegetables at cheap places for the first few days.<br/>
+      <strong>3.</strong> Don't drink tap water — ever. Bottled or filtered only.<br/>
+      <strong>4.</strong> Ice at established restaurants is factory-made and safe. Street stall ice — skip it.<br/>
+      <strong>5.</strong> Carry Imodium — "Bali belly" hits most visitors in the first 2–3 days.</p>
+
+      <h2>Related Guides</h2>
+      <p>💰 See <a href="/prices">fair prices for food and drinks</a> on our price guide.</p>
+      <p>🎒 Eating cheap? Read <a href="/blog/bali-budget-travel-2026">Bali on $30/day</a> for food budget tips.</p>
+      <p>🏘️ The best food areas: <a href="/blog/canggu-vs-seminyak-vs-ubud">Canggu vs Seminyak vs Ubud</a>.</p>
+      <p>🆕 More practical tips in <a href="/blog/bali-first-time-tips">25 things to know before visiting</a>.</p>
+    `
+  },
+
+  'bali-digital-nomad-guide-2026': {
+    title: 'Bali Digital Nomad Guide 2026: Coworking, Visas, Costs & Best Areas',
+    description: 'Everything remote workers need to know about living and working in Bali. Internet speeds, coworking spaces, visa options, and monthly costs.',
+    category: 'guide',
+    date: '2026-04-12',
+    readTime: '12 min',
+    content: `
+      <h2>Why Bali Is the #1 Digital Nomad Destination</h2>
+      <p>Bali consistently ranks as the world's top destination for remote workers. The combination of <strong>low cost of living, fast WiFi, vibrant community, beautiful surroundings, and timezone flexibility</strong> (UTC+8, great for APAC/Europe overlap) makes it hard to beat.</p>
+
+      <h2>Monthly Cost Breakdown</h2>
+      <p><strong>Budget nomad ($800–1,200/month):</strong> Shared villa room, warung meals, scooter, basic coworking.<br/>
+      <strong>Comfortable nomad ($1,500–2,500/month):</strong> Private villa with pool, mix of cafés and warungs, premium coworking, activities.<br/>
+      <strong>Luxury nomad ($3,000+/month):</strong> High-end villa, eating out daily, gym membership, spa sessions, weekend trips.</p>
+
+      <h3>Detailed Breakdown (Comfortable Level)</h3>
+      <p><strong>Villa rental:</strong> $400–700/month (private room with pool, Canggu/Ubud)<br/>
+      <strong>Coworking:</strong> $100–200/month (unlimited access)<br/>
+      <strong>Food:</strong> $300–500/month (mix of warungs and cafés)<br/>
+      <strong>Scooter:</strong> $60–80/month (including fuel)<br/>
+      <strong>SIM/internet:</strong> $10–15/month<br/>
+      <strong>Entertainment:</strong> $150–300/month<br/>
+      <strong>Health/gym:</strong> $50–100/month<br/>
+      <strong>Visa costs:</strong> $35–70/month (amortized)<br/>
+      <strong>Total: ~$1,100–1,900/month</strong></p>
+
+      <h2>Best Areas for Digital Nomads</h2>
+
+      <h3>Canggu (Most Popular)</h3>
+      <p>The undisputed digital nomad capital. Highest concentration of coworking spaces, cafés with fast WiFi, and social events. <strong>Batu Bolong</strong> area is the hub. Pros: community, convenience, nightlife. Cons: traffic, touristy, getting expensive.</p>
+
+      <h3>Ubud (Best for Focus)</h3>
+      <p>Quieter, cheaper, surrounded by nature. Great for deep work and wellness. Hubud and Outpost are excellent coworking spaces. Pros: peaceful, affordable, cultural. Cons: no beach, limited nightlife, some areas have spotty WiFi.</p>
+
+      <h3>Uluwatu (Rising Star)</h3>
+      <p>Growing nomad scene with stunning cliff-top villas and world-class surf. Less infrastructure but rapidly improving. Best for surfer-nomads. Pros: beautiful, less crowded. Cons: far from everything else, limited coworking options.</p>
+
+      <h2>Best Coworking Spaces</h2>
+      <p><strong>Dojo Bali (Canggu):</strong> The OG. Fast WiFi (100+ Mbps), pool, events. From $15/day or $150/month.<br/>
+      <strong>Outpost (Canggu & Ubud):</strong> Premium space with Skype rooms and standing desks. From $20/day or $200/month.<br/>
+      <strong>Hubud (Ubud):</strong> Beautiful bamboo structure. Strong community vibes. From $15/day or $140/month.<br/>
+      <strong>BWork (Canggu):</strong> Budget option. $10/day, $100/month. Basic but reliable WiFi.<br/>
+      <strong>Tropical Nomad (Canggu):</strong> Air-conditioned with restaurant. $12/day or $120/month.</p>
+
+      <h2>Internet & WiFi</h2>
+      <p><strong>Coworking spaces:</strong> 50–200 Mbps (very reliable, backup generators).<br/>
+      <strong>Café WiFi:</strong> 10–50 Mbps (varies wildly. Test before ordering).<br/>
+      <strong>Villa WiFi:</strong> 10–30 Mbps (ask before booking. Speeds drop at night).<br/>
+      <strong>Mobile data (Telkomsel/XL):</strong> 20–50 Mbps 4G. $5–10/month for 30GB+.</p>
+      <p><strong>Pro tip:</strong> Always have a mobile hotspot backup for important calls. Bali WiFi can drop without warning during storms.</p>
+
+      <h2>Visa Options for Remote Workers</h2>
+      <p><strong>Visa on Arrival (VOA):</strong> 30 days, $35. extendable once for another 30 days ($35). Total: 60 days max.<br/>
+      <strong>B211A Social/Cultural Visa:</strong> 60 days, extendable up to 180 days. Requires a sponsor (many agents offer this for $200–350). Best option for stays of 2–6 months.<br/>
+      <strong>Digital Nomad Visa (B319):</strong> Indonesia's official remote worker visa. 1 year, no Indonesian income tax. Requires proof of $60K+/year income or $100K+ savings. Application fee ~$300.</p>
+      <p><strong>Important:</strong> Technically, working remotely in Bali on a tourist visa is a legal gray area. The Digital Nomad Visa was created to formalize this. For stays over 60 days, it's worth getting proper documentation.</p>
+
+      <h2>Practical Tips</h2>
+      <p><strong>Banking:</strong> Use Wise or Revolut to avoid ATM fees. BCA ATMs have the lowest withdrawal fees locally.<br/>
+      <strong>Health insurance:</strong> SafetyWing ($45/month) is the most popular among nomads. Covers medical + travel.<br/>
+      <strong>Gym:</strong> Finns Recreation Club (Canggu) is the go-to ($90/month). Body Factory (Seminyak) is cheaper ($50/month).<br/>
+      <strong>Laundry:</strong> 7K–12K IDR/kg. Most areas have laundry services that return same-day.<br/>
+      <strong>Timezone:</strong> UTC+8 (same as Singapore/Perth). Works well for APAC roles and late-afternoon overlap with Europe.</p>
+
+      <h2>Related Guides</h2>
+      <p>💵 See <a href="/blog/how-much-bali-trip-cost-2026">full cost breakdown</a> for different budget levels.</p>
+      <p>🏘️ Compare living areas: <a href="/blog/canggu-vs-seminyak-vs-ubud">Canggu vs Seminyak vs Ubud</a>.</p>
+      <p>🎒 Need to go ultra-budget? <a href="/blog/bali-budget-travel-2026">Bali on $30/day</a>.</p>
+      <p>🛡️ Protect yourself: <a href="/blog/bali-scams-avoid-2026">22 scams to avoid</a>.</p>
+    `
+  },
+
+  'mount-batur-sunrise-trek-guide': {
+    title: 'Mount Batur Sunrise Trek 2026: What to Expect, Fair Prices & Tips',
+    description: 'Everything you need to know about hiking Mount Batur for sunrise. Difficulty level, what to wear, how to book, and avoiding tourist traps.',
+    category: 'activity',
+    date: '2026-04-06',
+    readTime: '8 min',
+    content: `
+      <h2>Why Mount Batur?</h2>
+      <p>Standing at 1,717 meters, Mount Batur is an active volcano with a stunning crater lake. The <strong>sunrise trek</strong> is one of Bali's most popular activities — watching the sun rise above the clouds from the summit while Mount Agung towers in the background is genuinely unforgettable.</p>
+
+      <h2>The Trek at a Glance</h2>
+      <p><strong>Difficulty:</strong> Moderate. No technical climbing — it's a steep uphill hike on a dirt/gravel path.<br/>
+      <strong>Duration:</strong> 2 hours up, 1.5 hours down (approximately).<br/>
+      <strong>Distance:</strong> ~6 km round trip.<br/>
+      <strong>Start time:</strong> 3:30–4:00 AM from the base.<br/>
+      <strong>Summit arrival:</strong> ~5:30 AM (before sunrise).<br/>
+      <strong>Sunrise:</strong> ~6:00–6:15 AM.<br/>
+      <strong>Back at base:</strong> ~8:00–9:00 AM.</p>
+
+      <h2>Fair Prices (2026)</h2>
+      <p><strong>Local guide (mandatory):</strong> 350K–500K IDR ($22–31) per person for a group trek.<br/>
+      <strong>Private guide:</strong> 600K–800K IDR ($37–50) for 1–2 people.<br/>
+      <strong>All-inclusive package (transport from hotel + guide + breakfast):</strong> 500K–700K IDR ($31–44).</p>
+      <p><strong>⚠️ Tourist trap alert:</strong> Agencies in Ubud and Kuta charge 800K–1.2M IDR for the same trek. Book directly with a local guide association or through BaliBuddy for fair prices.</p>
+
+      <h2>What to Wear & Bring</h2>
+      <p><strong>Shoes:</strong> Closed-toe with grip (hiking shoes ideal, sturdy sneakers OK). NOT flip-flops or sandals — the terrain is loose gravel and volcanic rock.<br/>
+      <strong>Clothing:</strong> Long pants, long-sleeve layering. It's cold at the top (8–12°C before sunrise). Bring a light jacket or hoodie. You can strip down after sunrise when it heats up quickly.<br/>
+      <strong>Headlamp/flashlight:</strong> Essential — you're hiking in the dark. Most guides provide one, but bring your phone as backup.<br/>
+      <strong>Water:</strong> At least 1 liter. You can buy more at the summit (overpriced at 30K–50K IDR).<br/>
+      <strong>Camera:</strong> Obviously. The summit views are incredible. Phone is fine.<br/>
+      <strong>Snacks:</strong> Granola bars or fruit. Breakfast is usually included (banana sandwiches + eggs cooked on volcanic steam).</p>
+
+      <h2>The Experience</h2>
+      <h3>2:00 AM — Pickup</h3>
+      <p>Your driver collects you from your hotel. The drive to Kintamani/Batur area takes 60–90 minutes from Ubud, 2+ hours from Canggu/Seminyak. Most people doze in the car.</p>
+
+      <h3>3:30 AM — Start Hiking</h3>
+      <p>You meet your guide at the base and begin the ascent by headlamp. The first 30 minutes are gentle, then it gets steeper. The path is well-worn but uneven. Take your time — it's not a race.</p>
+
+      <h3>5:30 AM — Summit</h3>
+      <p>Arrive at the top and find a spot facing east. It's crowded — there can be 100+ people on popular days. Your guide will set up a simple breakfast using volcanic steam vents to cook eggs. The hot tea at the summit is surprisingly wonderful.</p>
+
+      <h3>6:00 AM — Sunrise</h3>
+      <p>The moment the sun breaks the horizon, painting Mount Agung and the crater lake in golden light, you understand why people wake up at 2 AM for this. It's one of Bali's most special moments.</p>
+
+      <h3>6:30–8:00 AM — Descent</h3>
+      <p>The walk down is faster but harder on the knees. The trail is slippery with loose gravel. Take it slow. Some tours include a crater rim walk or hot springs stop on the way back.</p>
+
+      <h2>Who Should (and Shouldn't) Do This</h2>
+      <p><strong>Good for:</strong> Anyone with basic fitness who can walk uphill for 2 hours. No climbing experience needed. Kids 10+ can do it. Older adults in good health manage it fine.<br/>
+      <strong>Skip if:</strong> You have serious knee/hip problems, severe asthma, or are afraid of heights (the summit is exposed). The sleep deprivation is real — don't do it on your first or last night.</p>
+
+      <h2>Pro Tips</h2>
+      <p><strong>1.</strong> Go on a weekday (Tue–Thu) for fewer crowds at the summit.<br/>
+      <strong>2.</strong> Full moon treks are magical — you can see without headlamps. Check the lunar calendar.<br/>
+      <strong>3.</strong> The alternative <strong>Mount Batur hot springs</strong> (at Toya Bungkah) are worth visiting after the trek. 150K IDR entry.<br/>
+      <strong>4.</strong> Book a guide who includes the <strong>crater rim walk</strong> — it adds 30 minutes but gives you views into the active volcanic crater.<br/>
+      <strong>5.</strong> Bring cash for souvenirs and drinks at the summit — no card readers up there.</p>
+
+      <h2>Related Guides</h2>
+      <p>🗓️ We include Mount Batur in our <a href="/blog/bali-itinerary-7-days-2026">7-day itinerary</a> as a Day 4 highlight.</p>
+      <p>💰 See <a href="/prices">fair activity prices</a> to compare trek costs.</p>
+      <p>📅 Best months for clear skies: <a href="/blog/best-time-visit-bali-2026">Bali weather guide</a>.</p>
+      <p>📋 Make sure you're prepared: <a href="/checklist">arrival checklist</a>.</p>
+    `
+  },
+
+  'bali-honeymoon-guide-2026': {
+    title: 'Bali Honeymoon Guide 2026: Most Romantic Spots, Hotels & Experiences',
+    description: 'Plan the perfect Bali honeymoon. Best romantic hotels, private experiences, candlelit dinners, and couple activities at every budget.',
+    category: 'itinerary',
+    date: '2026-04-03',
+    readTime: '10 min',
+    content: `
+      <h2>Why Bali Is Perfect for Honeymoons</h2>
+      <p>Bali has been a top honeymoon destination for decades, and for good reason. <strong>Stunning infinity pools, private villa suites, candlelit beach dinners, world-class spas, and breathtaking scenery</strong> — all at a fraction of what you'd pay in the Maldives or Santorini.</p>
+
+      <h2>Best Areas for Honeymoons</h2>
+
+      <h3>Ubud — For Romance & Nature</h3>
+      <p>Jungle villas with private infinity pools overlooking rice terraces. Morning yoga, afternoon spa treatments, sunrise walks through misty valleys. Ubud is <strong>the most romantic area in Bali</strong> if you prioritize nature and intimacy over beaches. Best for: Couples who love wellness, culture, and tranquility.</p>
+
+      <h3>Uluwatu — For Dramatic Views</h3>
+      <p>Clifftop resorts with mind-blowing ocean panoramas. The most photogenic sunsets in Bali. Boutique hotels here are designed specifically for couples. Best for: Instagram-worthy romance, surf-loving couples, sunset chasers.</p>
+
+      <h3>Seminyak — For Luxury & Dining</h3>
+      <p>The most upscale resort area with the best restaurants and beach clubs. Walk-everywhere convenience with a polished, honeymoon-resort feel. Best for: Foodies, couples who want nightlife options, luxury seekers.</p>
+
+      <h3>Nusa Dua — For All-Inclusive Comfort</h3>
+      <p>The most resort-heavy area with pristine private beaches. International 5-star brands (St. Regis, Mulia, Hilton). Calm swimming waters. Best for: Couples who want a hassle-free, all-inclusive experience.</p>
+
+      <h2>Romantic Hotels & Villas (By Budget)</h2>
+
+      <h3>Splurge ($200–500+/night)</h3>
+      <p><strong>COMO Uma Ubud:</strong> Minimalist luxury overlooking the valley. Private pool suites from $280/night.<br/>
+      <strong>Alila Villas Uluwatu:</strong> Cliff-edge infinity pools. Architecture awards winner. From $350/night.<br/>
+      <strong>The Mulia (Nusa Dua):</strong> Over-the-top luxury with a private beach. From $250/night.<br/>
+      <strong>Four Seasons Sayan (Ubud):</strong> River-valley setting. The arrival across a suspension bridge is magical. From $400/night.</p>
+
+      <h3>Mid-Range ($80–200/night)</h3>
+      <p><strong>Komaneka at Bisma (Ubud):</strong> Stunning valley views, great restaurant, romantic atmosphere. From $120/night.<br/>
+      <strong>The Kayon Resort (Ubud):</strong> Multi-level infinity pool in the jungle. Highly photogenic. From $100/night.<br/>
+      <strong>Suarga Padang Padang (Uluwatu):</strong> Eco-luxury on the cliff. Bamboo architecture. From $150/night.<br/>
+      <strong>Private Airbnb villa with pool:</strong> Many stunning options in Ubud/Canggu for $60–120/night.</p>
+
+      <h3>Budget Romantic ($30–80/night)</h3>
+      <p><strong>Honeymoon Guesthouse (Ubud):</strong> Yes, it exists! Simple but romantic with rice field views from $35/night.<br/>
+      <strong>Private villa in Sidemen:</strong> Remote valley setting, Mount Agung views, private pool. From $45/night.<br/>
+      <strong>Boutique stay in Amed:</strong> Beachfront, quiet, incredibly affordable. From $30/night.</p>
+
+      <h2>Romantic Experiences</h2>
+      <p><strong>Private candlelit dinner on the beach:</strong> 500K–1.5M IDR ($31–93). Many hotels arrange this. Book 2 days ahead.<br/>
+      <strong>Couples spa treatment:</strong> 300K–800K IDR ($19–50) for 2 hours at a quality spa. Flower baths are the signature Bali couple experience.<br/>
+      <strong>Sunrise at Mount Batur:</strong> 500K–700K IDR per person. Unforgettable shared experience (see our <a href="/blog/mount-batur-sunrise-trek-guide">Mount Batur guide</a>).<br/>
+      <strong>Private sunset yacht cruise:</strong> 2M–5M IDR ($125–312) for 2–3 hours. Champagne, snacks, and golden hour on the water.<br/>
+      <strong>Cooking class for two:</strong> 250K–400K IDR per person. Learn Balinese cuisine together and eat your creations.<br/>
+      <strong>Tegallalang rice terrace picnic:</strong> Some hotels arrange private setups. Surreal backdrop for a romantic lunch.</p>
+
+      <h2>7-Day Honeymoon Itinerary</h2>
+      <p><strong>Days 1–2: Seminyak</strong> — Arrive, beach club sunset, fine dining. Romantic start with Ku De Ta or Sundara at Jimbaran.<br/>
+      <strong>Days 3–4: Ubud</strong> — Private pool villa, couples spa day, Tirta Empul purification together, sunrise Campuhan Ridge walk.<br/>
+      <strong>Day 5: Nusa Penida day trip</strong> — Kelingking Beach photos, Crystal Bay snorkeling. Adventure day together.<br/>
+      <strong>Days 6–7: Uluwatu</strong> — Cliffside resort, Kecak fire dance at sunset, candlelit dinner overlooking the ocean. Perfect finale.</p>
+
+      <h2>Honeymoon Budget Estimates</h2>
+      <p><strong>Budget honeymoon (7 days):</strong> $700–1,200 for two (excluding flights). Boutique stays, warung dining, free activities, 1–2 splurge experiences.<br/>
+      <strong>Mid-range honeymoon:</strong> $1,500–3,000 for two. Nice hotels, restaurant dining, spa packages, private driver.<br/>
+      <strong>Luxury honeymoon:</strong> $4,000–8,000+ for two. 5-star resorts, private experiences, fine dining daily.</p>
+      <p>Even a luxury Bali honeymoon costs less than a budget Maldives trip. That's the magic.</p>
+
+      <h2>Related Guides</h2>
+      <p>🗓️ Use our <a href="/blog/bali-itinerary-7-days-2026">7-day itinerary</a> as a base and customize for romance.</p>
+      <p>💰 Check <a href="/prices">fair prices</a> for spa treatments, dinners, and activities.</p>
+      <p>📅 Best honeymoon months: <a href="/blog/best-time-visit-bali-2026">weather & crowd guide</a>.</p>
+      <p>🧘 Add wellness: <a href="/blog/bali-wellness-retreat-guide">couples retreat guide</a>.</p>
+      <p>🏘️ Compare areas: <a href="/blog/canggu-vs-seminyak-vs-ubud">where to stay in Bali</a>.</p>
+    `
+  },
 };
 
 export async function generateStaticParams() {

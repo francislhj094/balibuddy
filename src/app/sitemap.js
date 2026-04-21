@@ -12,7 +12,12 @@ export default function sitemap() {
     'bali-budget-travel-2026',
     'best-time-visit-bali-2026',
     'bali-first-time-tips',
-    'bali-wellness-retreat-guide'
+    'bali-wellness-retreat-guide',
+    'best-temples-bali-2026',
+    'bali-food-guide-what-to-eat',
+    'bali-digital-nomad-guide-2026',
+    'mount-batur-sunrise-trek-guide',
+    'bali-honeymoon-guide-2026'
   ];
 
   const blogUrls = staticArticles.map((slug) => ({
