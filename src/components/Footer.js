@@ -8,8 +8,8 @@ export default function Footer() {
   ];
 
   const FooterLink = ({ href, children }) => {
-    if (href.startsWith('#')) {
-      return <a href={href} className="block text-sm text-slate-400 py-1.5 hover:text-white transition-colors">{children}</a>;
+    if (href.startsWith('#') || href.startsWith('http')) {
+      return <a href={href} target={href.startsWith('http') ? '_blank' : undefined} rel={href.startsWith('http') ? 'noopener noreferrer' : undefined} className="block text-sm text-slate-400 py-1.5 hover:text-white transition-colors">{children}</a>;
     }
     return <Link href={href} className="block text-sm text-slate-400 py-1.5 hover:text-white transition-colors">{children}</Link>;
   };
@@ -34,6 +34,26 @@ export default function Footer() {
             </div>
           ))}
         </div>
+
+        {/* BaliLingo Cross-Promotion */}
+        <div className="mb-8 py-5 px-6 rounded-xl bg-gradient-to-r from-cyan-500/5 to-emerald-500/5 border border-white/5 flex flex-col sm:flex-row items-center justify-between gap-4">
+          <div className="flex items-center gap-3">
+            <span className="text-2xl">🗣️</span>
+            <div>
+              <p className="text-sm font-medium text-slate-300">Want to learn Bahasa before your trip?</p>
+              <p className="text-xs text-slate-500">Try <strong className="text-cyan-400">BaliLingo</strong> — learn Indonesian phrases tourists actually need</p>
+            </div>
+          </div>
+          <a 
+            href="https://balilingo.com" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="text-sm font-semibold px-5 py-2 rounded-full bg-cyan-500/10 border border-cyan-500/20 text-cyan-400 hover:bg-cyan-500/20 transition-all whitespace-nowrap"
+          >
+            Try BaliLingo →
+          </a>
+        </div>
+
         <div className="text-center pt-8 border-t border-white/5">
           <p className="text-sm text-slate-600">© 2026 BaliBuddy. Made with ☀️ in Bali.</p>
         </div>
