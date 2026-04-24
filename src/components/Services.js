@@ -7,7 +7,7 @@ const services = [
   { id: 'ubud-tour', emoji: '🌋', title: 'Ubud Day Tour', desc: 'Rice terraces, monkey forest, waterfall, coffee plantation, temple. Lunch included.', price: 'IDR 500K', usd: '~$31 USD', img: 'https://images.unsplash.com/photo-1555400038-63f5ba517a47?auto=format&fit=crop&w=600&q=80' },
   { id: 'nusa-penida', emoji: '🤿', title: 'Nusa Penida Tour', desc: 'Kelingking Beach, Angel\'s Billabong, Broken Beach, Crystal Bay. Boat + driver included.', price: 'IDR 750K', usd: '~$46 USD', img: 'https://images.unsplash.com/photo-1577717903315-1691ae25ab3f?auto=format&fit=crop&w=600&q=80' },
   { id: 'spa', emoji: '💆', title: 'Spa & Wellness Package', desc: '2-hour Balinese massage + flower bath + body scrub at a vetted premium spa.', price: 'IDR 350K', usd: '~$22 USD', img: 'https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&w=600&q=80' },
-  { id: 'esim', emoji: '📱', title: 'Bali eSIM + Setup', desc: '30-day unlimited data eSIM. Pre-activated before you land. No SIM card hassle.', price: '$8 USD', usd: '', img: 'https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=600&q=80' },
+  { id: 'esim', emoji: '📱', title: 'Bali eSIM + Setup', desc: '30-day unlimited data eSIM. Pre-activated before you land. No SIM card hassle.', price: '$4.50 USD', usd: '', badge: 'Recommended', img: 'https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=600&q=80', affiliate: true, affiliateUrl: 'https://www.airalo.com/indonesia?ref=balibuddy' },
 ];
 
 export default function Services() {
@@ -68,12 +68,24 @@ export default function Services() {
                     <span className="font-display text-xl text-cyan-400">{s.price}</span>
                     {s.usd && <span className="text-xs text-slate-500">{s.usd}</span>}
                   </div>
-                  <button 
-                    onClick={() => openBooking(s)}
-                    className="block w-full py-3 rounded-full bg-gradient-to-r from-cyan-500 to-cyan-400 text-gray-900 font-semibold text-sm text-center hover:-translate-y-0.5 transition-all shadow-md shadow-cyan-500/15 cursor-pointer"
-                  >
-                    Book {s.title.split(' ')[0]}
-                  </button>
+                  {s.affiliate ? (
+                    <a
+                      href={s.affiliateUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="block w-full py-3 rounded-full bg-gradient-to-r from-cyan-500 to-cyan-400 text-gray-900 font-semibold text-sm text-center hover:-translate-y-0.5 transition-all shadow-md shadow-cyan-500/15"
+                    >
+                      Get eSIM →
+                    </a>
+                  ) : (
+                    <button 
+                      onClick={() => openBooking(s)}
+                      className="block w-full py-3 rounded-full bg-gradient-to-r from-cyan-500 to-cyan-400 text-gray-900 font-semibold text-sm text-center hover:-translate-y-0.5 transition-all shadow-md shadow-cyan-500/15 cursor-pointer"
+                    >
+                      Book {s.title.split(' ')[0]}
+                    </button>
+                  )}
+                  {s.affiliate && <p className="text-[10px] text-slate-600 text-center mt-2">Affiliate link — we may earn a commission</p>}
                 </div>
               </div>
             ))}

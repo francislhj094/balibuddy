@@ -201,8 +201,31 @@ export default function ChecklistPage() {
           })}
         </div>
 
+        {/* eSIM Recommendation */}
+        <div className="mt-12 bg-[#111827] border border-cyan-500/15 rounded-2xl p-8 sm:p-10">
+          <div className="flex flex-col sm:flex-row items-start sm:items-center gap-6">
+            <div className="text-5xl">📱</div>
+            <div className="flex-1">
+              <h3 className="font-display text-xl mb-2">Get Your Bali eSIM Before You Fly</h3>
+              <p className="text-slate-400 text-sm leading-relaxed mb-1">
+                Skip the SIM card hassle at the airport. Airalo eSIMs work instantly — just scan a QR code and you&apos;re connected before you even land. Coverage across all of Bali, Nusa Penida, and the Gili Islands.
+              </p>
+              <p className="text-slate-500 text-xs">Starting from $4.50 USD for 1GB · No contract · Instant activation</p>
+            </div>
+            <a 
+              href="https://www.airalo.com/indonesia?ref=balibuddy"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block px-8 py-3 rounded-full bg-gradient-to-r from-cyan-500 to-cyan-400 text-gray-900 font-semibold text-sm shadow-md hover:shadow-cyan-500/25 transition-all hover:-translate-y-0.5 whitespace-nowrap"
+            >
+              Get eSIM →
+            </a>
+          </div>
+          <p className="text-[10px] text-slate-600 mt-4">Affiliate link — we may earn a small commission at no extra cost to you.</p>
+        </div>
+
         {/* CTA */}
-        <div className="mt-16 text-center bg-gradient-to-r from-cyan-500/10 to-emerald-500/10 border border-cyan-500/20 rounded-2xl p-10">
+        <div className="mt-8 text-center bg-gradient-to-r from-cyan-500/10 to-emerald-500/10 border border-cyan-500/20 rounded-2xl p-10">
           <h3 className="font-display text-2xl mb-3">Need an Airport Transfer?</h3>
           <p className="text-slate-400 mb-6 max-w-lg mx-auto">
             Don&apos;t stress about day 1. Pre-book a vetted driver who&apos;ll meet you at arrivals with your name on a sign.
