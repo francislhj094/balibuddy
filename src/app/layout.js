@@ -3,6 +3,7 @@ import './globals.css';
 import Script from 'next/script';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
+import FloatingWhatsApp from '@/components/FloatingWhatsApp';
 
 export const metadata = {
   metadataBase: new URL('https://balibuddy.online'),
@@ -65,6 +66,7 @@ export default function RootLayout({ children }) {
         <Navbar />
         {children}
         <Footer />
+        <FloatingWhatsApp />
       </body>
     </html>
   );

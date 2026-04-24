@@ -100,3 +100,12 @@ body {
     radial-gradient(circle at 50% 80%, rgba(255,255,255,0.05) 0%, transparent 6%);
   animation: floatParticles 20s linear infinite;
 }
+
+/* Subtle bounce for floating WhatsApp */
+@keyframes bounce-subtle {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+}
+.animate-bounce-subtle {
+  animation: bounce-subtle 2s ease-in-out infinite;
+}
