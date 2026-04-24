@@ -1,6 +1,7 @@
 export const metadata = {
   title: 'Terms of Service | BaliBuddy',
   description: 'Terms of service and user agreement for BaliBuddy.',
+  alternates: { canonical: 'https://balibuddy.online/terms' },
 };
 
 export default function TermsPage() {

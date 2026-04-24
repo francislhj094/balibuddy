@@ -4,6 +4,7 @@
 export const metadata = {
   title: 'Bali Travel Blog — Tips, Guides & Itineraries for 2026',
   description: 'Your ultimate Bali travel resource. Itineraries, fair prices, scam guides, area guides, and insider tips updated for 2026.',
+  alternates: { canonical: 'https://balibuddy.online/blog' },
 };
 
 // These would come from Supabase in production

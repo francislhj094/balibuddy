@@ -8,6 +8,7 @@ export const metadata = {
   title: 'Bali Fair Price Guide 2026 — What Things Actually Cost',
   description: 'The honest guide to Bali prices in 2026. Know exactly what to pay for taxis, tours, food, massages, and more. Tourist price vs fair price comparison.',
   keywords: ['bali prices', 'bali fair prices', 'how much things cost in bali', 'bali taxi prices', 'bali scam prices'],
+  alternates: { canonical: 'https://balibuddy.online/prices' },
 };
 
 const priceCategories = [

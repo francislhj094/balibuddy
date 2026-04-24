@@ -5,7 +5,7 @@ import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 
 export const metadata = {
-  metadataBase: new URL(process.env.NEXT_PUBLIC_APP_URL || 'https://balibuddy.online'),
+  metadataBase: new URL('https://balibuddy.online'),
   title: {
     default: 'BaliBuddy — AI Bali Trip Planner & Trusted Booking',
     template: '%s | BaliBuddy',
@@ -31,7 +31,7 @@ export const metadata = {
     description: 'Plan your perfect Bali trip in 60 seconds. Fair prices, vetted services, zero scams.',
   },
   robots: { index: true, follow: true },
-  alternates: { canonical: '/' },
+  alternates: { canonical: 'https://balibuddy.online' },
 };
 
 export default function RootLayout({ children }) {

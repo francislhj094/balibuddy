@@ -1,6 +1,7 @@
 export const metadata = {
   title: 'Privacy Policy | BaliBuddy',
   description: 'How BaliBuddy collects and uses your data.',
+  alternates: { canonical: 'https://balibuddy.online/privacy' },
 };
 
 export default function PrivacyPage() {

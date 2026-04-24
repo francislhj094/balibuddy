@@ -298,7 +298,7 @@ function closeModal() {
 
 function submitBooking() {
   const title = document.getElementById('modalTitle').textContent;
-  const wa = `https://wa.me/628XXXXXXXXXX?text=${encodeURIComponent(`Hi BaliBuddy! I'd like to book: ${title}`)}`;
+  const wa = `https://wa.me/6282341834263?text=${encodeURIComponent(`Hi BaliBuddy! I'd like to book: ${title}`)}`;
   window.open(wa, '_blank');
   closeModal();
 }
@@ -326,7 +326,7 @@ function sendToWhatsApp() {
   const days = document.getElementById('tripDays').value;
   const budget = document.getElementById('tripBudget').value;
   const msg = `Hi BaliBuddy! I just created a ${days}-day ${budget} itinerary on your website and I'd love to book the services. Can you help?`;
-  window.open(`https://wa.me/628XXXXXXXXXX?text=${encodeURIComponent(msg)}`, '_blank');
+  window.open(`https://wa.me/6282341834263?text=${encodeURIComponent(msg)}`, '_blank');
 }
 
 function bookServices() {

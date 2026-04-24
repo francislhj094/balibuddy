@@ -43,4 +43,13 @@ Desktop.ini
 *.tsbuildinfo
 next-env.d.ts
 
+# Test & utility scripts
+test-api.js
+convert.js
+convert.py
+add_captions.js
+*.mp4
+
+.vercel
+
 .vercel
