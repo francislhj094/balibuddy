@@ -1,3 +1,5 @@
+'use client';
+
 export default function TrustBar() {
   const items = [
     { icon: '🔒', text: 'Verified Drivers' },
@@ -5,15 +7,23 @@ export default function TrustBar() {
     { icon: '🌍', text: '15+ Languages' },
     { icon: '⭐', text: '4.9/5 Rating' },
     { icon: '📱', text: 'WhatsApp Support' },
+    { icon: '🛡️', text: 'Insured Trips' },
   ];
 
+  // Double the items for seamless marquee loop
+  const doubled = [...items, ...items];
+
   return (
-    <section className="py-5 border-b border-white/5 bg-[#111827]/60">
-      <div className="max-w-6xl mx-auto px-6 flex justify-center gap-8 sm:gap-12 flex-wrap">
-        {items.map((item, i) => (
-          <div key={i} className="flex items-center gap-2 text-sm text-slate-400">
-            <span>{item.icon}</span>
-            <span>{item.text}</span>
+    <section className="relative py-4 border-b border-white/5 bg-[#111827]/60 overflow-hidden">
+      {/* Fade edges */}
+      <div className="absolute left-0 top-0 bottom-0 w-16 z-10 bg-gradient-to-r from-[#0a0f1a] to-transparent pointer-events-none" />
+      <div className="absolute right-0 top-0 bottom-0 w-16 z-10 bg-gradient-to-l from-[#0a0f1a] to-transparent pointer-events-none" />
+
+      <div className="animate-marquee flex gap-12 whitespace-nowrap w-max">
+        {doubled.map((item, i) => (
+          <div key={i} className="flex items-center gap-2.5 text-sm text-slate-400">
+            <span className="text-base">{item.icon}</span>
+            <span className="font-medium">{item.text}</span>
           </div>
         ))}
       </div>

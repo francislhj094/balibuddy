@@ -2,8 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap');
-
 :root {
   --bg: #0a0f1a;
   --bg-card: #111827;
@@ -16,29 +14,25 @@
 }
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
-
 html { scroll-behavior: smooth; }
 
 body {
-  font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+  font-family: var(--font-jakarta), system-ui, sans-serif;
   background: var(--bg);
   color: #f1f5f9;
   -webkit-font-smoothing: antialiased;
   overflow-x: hidden;
 }
 
-::selection {
-  background: rgba(34,211,238,0.3);
-  color: #fff;
-}
+::selection { background: rgba(34,211,238,0.3); color: #fff; }
 
 /* Scrollbar */
-::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar { width: 6px; }
 ::-webkit-scrollbar-track { background: var(--bg); }
-::-webkit-scrollbar-thumb { background: #334155; border-radius: 4px; }
+::-webkit-scrollbar-thumb { background: #334155; border-radius: 999px; }
 ::-webkit-scrollbar-thumb:hover { background: #475569; }
 
-/* Gradient text utility */
+/* Gradient text */
 .gradient-text {
   background: linear-gradient(135deg, #06b6d4, #22d3ee, #67e8f9);
   -webkit-background-clip: text;
@@ -46,29 +40,53 @@ body {
   background-clip: text;
 }
 
-/* Glow effect */
+/* Glassmorphism */
+.glass {
+  background: rgba(17, 24, 39, 0.55);
+  backdrop-filter: blur(20px) saturate(1.2);
+  -webkit-backdrop-filter: blur(20px) saturate(1.2);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* Gradient border on hover */
+.gradient-border { position: relative; }
+.gradient-border::before {
+  content: ''; position: absolute; inset: 0; border-radius: inherit; padding: 1px;
+  background: linear-gradient(135deg, rgba(6,182,212,0.5), rgba(52,211,153,0.3), rgba(139,92,246,0.4));
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor; mask-composite: exclude;
+  opacity: 0; transition: opacity 0.4s ease; pointer-events: none;
+}
+.gradient-border:hover::before { opacity: 1; }
+
+/* Glow */
 .glow { box-shadow: 0 0 40px rgba(6,182,212,0.15); }
 .glow-green { box-shadow: 0 0 40px rgba(52,211,153,0.15); }
 
 /* Card hover */
-.card-hover {
-  transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
-}
-.card-hover:hover {
-  transform: translateY(-4px);
-  border-color: rgba(255,255,255,0.12);
-  box-shadow: 0 12px 40px rgba(0,0,0,0.3);
+.card-hover { transition: transform 0.4s cubic-bezier(0.4,0,0.2,1), border-color 0.4s ease, box-shadow 0.4s ease; }
+.card-hover:hover { transform: translateY(-6px); border-color: rgba(255,255,255,0.12); box-shadow: 0 20px 50px rgba(0,0,0,0.35); }
+
+/* Shimmer loading */
+@keyframes shimmer { 0% { background-position: -1000px 0; } 100% { background-position: 1000px 0; } }
+.shimmer { background: linear-gradient(90deg, #1e293b 0%, #334155 50%, #1e293b 100%); background-size: 2000px 100%; animation: shimmer 2s infinite linear; border-radius: 8px; }
+
+/* Section glow divider */
+.section-glow::before {
+  content: ''; position: absolute; top: 0; left: 50%; transform: translateX(-50%);
+  width: 60%; height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(6,182,212,0.3), transparent);
 }
 
-/* Fade in animation */
-@keyframes fadeInUp {
-  from { opacity: 0; transform: translateY(24px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-@keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
-}
+/* Animated gradient */
+@keyframes gradient-shift { 0% { background-position: 0% 50%; } 50% { background-position: 100% 50%; } 100% { background-position: 0% 50%; } }
+.animated-gradient { background-size: 200% 200%; animation: gradient-shift 6s ease infinite; }
+
+/* Fade animations */
+@keyframes fadeInUp { from { opacity: 0; transform: translateY(24px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+@keyframes fadeInDown { from { opacity: 0; transform: translateY(-16px); } to { opacity: 1; transform: translateY(0); } }
 .animate-fade-in-up { animation: fadeInUp 0.6s ease both; }
 .animate-fade-in { animation: fadeIn 0.8s ease both; }
 
@@ -79,33 +97,33 @@ body {
 .delay-400 { animation-delay: 0.4s; }
 .delay-500 { animation-delay: 0.5s; }
 
-/* Pulse dot */
-@keyframes pulse-dot {
-  0%, 100% { opacity: 1; transform: scale(1); }
-  50% { opacity: 0.5; transform: scale(1.5); }
-}
-.pulse-dot { animation: pulse-dot 2s ease infinite; }
+/* Floating orbs */
+@keyframes float-orb-1 { 0%,100% { transform: translate(0,0) scale(1); } 33% { transform: translate(30px,-30px) scale(1.1); } 66% { transform: translate(-20px,20px) scale(0.95); } }
+@keyframes float-orb-2 { 0%,100% { transform: translate(0,0) scale(1); } 33% { transform: translate(-40px,20px) scale(1.05); } 66% { transform: translate(20px,-40px) scale(0.9); } }
 
 /* Particle float */
-@keyframes floatParticles {
-  0% { transform: translateY(0) scale(1); }
-  50% { transform: translateY(-20px) scale(1.05); }
-  100% { transform: translateY(0) scale(1); }
-}
+@keyframes floatParticles { 0% { transform: translateY(0) scale(1); } 50% { transform: translateY(-20px) scale(1.05); } 100% { transform: translateY(0) scale(1); } }
 .hero-particles {
-  position: absolute; inset: 0; z-index: -1;
-  background-image: 
-    radial-gradient(circle at 15% 50%, rgba(255,255,255,0.05) 0%, transparent 5%),
-    radial-gradient(circle at 85% 30%, rgba(255,255,255,0.05) 0%, transparent 4%),
-    radial-gradient(circle at 50% 80%, rgba(255,255,255,0.05) 0%, transparent 6%);
+  position: absolute; inset: 0; z-index: 0; pointer-events: none;
+  background-image:
+    radial-gradient(circle at 15% 50%, rgba(6,182,212,0.06) 0%, transparent 5%),
+    radial-gradient(circle at 85% 30%, rgba(52,211,153,0.05) 0%, transparent 4%),
+    radial-gradient(circle at 50% 80%, rgba(139,92,246,0.04) 0%, transparent 6%);
   animation: floatParticles 20s linear infinite;
 }
 
-/* Subtle bounce for floating WhatsApp */
-@keyframes bounce-subtle {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-6px); }
-}
-.animate-bounce-subtle {
-  animation: bounce-subtle 2s ease-in-out infinite;
-}
+/* Marquee */
+@keyframes marquee { 0% { transform: translateX(0%); } 100% { transform: translateX(-50%); } }
+.animate-marquee { animation: marquee 25s linear infinite; }
+.animate-marquee:hover { animation-play-state: paused; }
+
+/* Scroll pulse */
+@keyframes scrollPulse { 0%,100% { opacity: 0.3; height: 32px; } 50% { opacity: 1; height: 48px; } }
+
+/* Subtle bounce for WhatsApp */
+@keyframes bounce-subtle { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-6px); } }
+.animate-bounce-subtle { animation: bounce-subtle 2s ease-in-out infinite; }
+
+/* Pulse dot */
+@keyframes pulse-dot { 0%,100% { opacity: 1; transform: scale(1); } 50% { opacity: 0.5; transform: scale(1.5); } }
+.pulse-dot { animation: pulse-dot 2s ease infinite; }

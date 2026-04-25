@@ -2,6 +2,7 @@
 // AI-Powered Bali Itinerary Generator using Claude API
 
 import Anthropic from '@anthropic-ai/sdk';
+import { rateLimit } from '@/lib/rateLimit';
 
 const anthropic = new Anthropic({
   apiKey: process.env.ANTHROPIC_API_KEY,
@@ -10,7 +11,8 @@ const anthropic = new Anthropic({
 const SYSTEM_PROMPT = `You are BaliBuddy, an expert Bali travel planner. You create personalized, day-by-day itineraries for tourists visiting Bali.
 
 RULES:
-- Always respond with valid JSON only (no markdown, no backticks)
+- Always respond with valid JSON only (no markdown, no backticks, no extra text)
+- Keep responses concise to stay within token limits
 - Include realistic, specific venue/location names
 - Include fair prices in IDR for every activity
 - Match activities to the user's interests, budget, and group type
@@ -18,6 +20,7 @@ RULES:
 - Factor in travel time between locations
 - Always include meal suggestions with real restaurant names
 - Mark activities that can be booked through BaliBuddy with "bookable": true
+- Limit each day to 5-6 activities maximum to keep the response compact
 
 BUDGET TIERS:
 - Budget: Local warungs, Gojek transport, public beaches, free temples. ~300K-600K IDR/day
@@ -35,41 +38,39 @@ AREAS TO CONSIDER:
 
 RESPONSE FORMAT (JSON):
 {
-  "title": "Your Perfect 7-Day Bali Adventure",
-  "summary": "Brief 1-2 sentence overview",
+  "title": "Your Perfect X-Day Bali Adventure",
+  "summary": "Brief overview",
   "total_estimate_min_usd": 450,
   "total_estimate_max_usd": 800,
-  "pre_arrival_checklist": [
-    "Pay tourist levy (IDR 150K) at lovebali.baliprov.go.id",
-    "Download All Indonesia arrivals app",
-    "Get eSIM before boarding",
-    "Book airport transfer in advance"
-  ],
   "days": [
     {
       "day": 1,
-      "title": "Arrival & South Bali Vibes",
+      "title": "Arrival & South Bali",
       "area": "Seminyak",
       "activities": [
         {
           "time": "2:00 PM",
-          "title": "Airport pickup & drive to hotel",
-          "description": "Your vetted driver meets you at arrivals with a sign. AC car, cold water, WiFi.",
+          "title": "Airport pickup",
+          "description": "Vetted driver meets you at arrivals.",
           "price_idr": "200,000",
           "price_usd": 12,
-          "tip": "Don't accept any ride offers inside the terminal",
           "bookable": true
         }
-      ],
-      "day_total_min_idr": 500000,
-      "day_total_max_idr": 900000
+      ]
     }
-  ],
-  "packing_tips": ["Sarong for temples", "Reef-safe sunscreen", "Mosquito repellent"],
-  "important_notes": ["Nyepi day shuts everything down", "ATMs: use bank-attached machines only"]
+  ]
 }`;
 
 export async function POST(request) {
+  // Rate limiting — 5 requests per minute per IP
+  const limit = rateLimit(request);
+  if (!limit.allowed) {
+    return Response.json(
+      { error: 'Too many requests. Please wait a moment and try again.', code: 'RATE_LIMITED' },
+      { status: 429, headers: { 'Retry-After': String(limit.retryAfter) } }
+    );
+  }
+
   try {
     const body = await request.json();
     const { days, budget, group, interests, arrivalDate } = body;
@@ -82,18 +83,24 @@ export async function POST(request) {
       );
     }
 
-    const userPrompt = `Create a ${days}-day Bali itinerary for a ${group || 'couple'} traveling on a ${budget} budget.
+    // Cap days to manage token usage
+    const cappedDays = Math.min(parseInt(days), 14);
+
+    const userPrompt = `Create a ${cappedDays}-day Bali itinerary for a ${group || 'couple'} traveling on a ${budget} budget.
 
 Their interests: ${interests.join(', ')}
 ${arrivalDate ? `Arrival date: ${arrivalDate}` : ''}
 
-Create a detailed day-by-day plan with specific venues, accurate prices, and practical tips. Make it feel personal and exciting, not generic. Include a mix of must-see highlights and hidden gems that most tourists miss.
+Create a detailed day-by-day plan with specific venues, accurate prices, and practical tips. Make it personal and exciting. Include must-see highlights and hidden gems.
 
-Respond with JSON only.`;
+IMPORTANT: Respond with ONLY valid JSON. No markdown. No backticks. Keep each day to 5 activities max.`;
+
+    // Scale max_tokens based on trip length
+    const maxTokens = Math.min(1500 + (cappedDays * 500), 8000);
 
     const message = await anthropic.messages.create({
-      model: 'claude-sonnet-4-20250514',
-      max_tokens: 4000,
+      model: 'claude-haiku-4-5-20251001',
+      max_tokens: maxTokens,
       system: SYSTEM_PROMPT,
       messages: [
         { role: 'user', content: userPrompt }
@@ -106,9 +113,33 @@ Respond with JSON only.`;
       .map(block => block.text)
       .join('');
 
-    // Parse JSON (handle potential markdown wrapping)
-    const cleanJson = responseText.replace(/```json\n?|```\n?/g, '').trim();
-    const itinerary = JSON.parse(cleanJson);
+    // Check if response was truncated
+    const wasTruncated = message.stop_reason === 'max_tokens';
+
+    // Clean and parse JSON
+    let cleanJson = responseText.replace(/```json\n?|```\n?/g, '').trim();
+
+    // If truncated, try to repair the JSON by closing open brackets
+    if (wasTruncated) {
+      cleanJson = repairTruncatedJson(cleanJson);
+    }
+
+    let itinerary;
+    try {
+      itinerary = JSON.parse(cleanJson);
+    } catch (parseError) {
+      // Attempt JSON repair
+      const repaired = repairTruncatedJson(cleanJson);
+      try {
+        itinerary = JSON.parse(repaired);
+      } catch {
+        console.error('JSON parse failed. Raw response:', cleanJson.substring(0, 500));
+        return Response.json(
+          { error: 'AI returned invalid data. Please try again.', code: 'PARSE_ERROR' },
+          { status: 500 }
+        );
+      }
+    }
 
     return Response.json({
       success: true,
@@ -116,16 +147,23 @@ Respond with JSON only.`;
       usage: {
         input_tokens: message.usage.input_tokens,
         output_tokens: message.usage.output_tokens,
+        truncated: wasTruncated,
       }
     });
 
   } catch (error) {
     console.error('Itinerary generation error:', error);
     
-    // Return a fallback itinerary if AI fails
-    if (error.message?.includes('API')) {
+    if (error.status === 401 || error.message?.includes('auth')) {
       return Response.json(
-        { error: 'AI service temporarily unavailable. Please try again.', code: 'AI_ERROR' },
+        { error: 'AI service authentication failed. Check API key.', code: 'AUTH_ERROR' },
+        { status: 503 }
+      );
+    }
+
+    if (error.status === 429) {
+      return Response.json(
+        { error: 'AI service rate limited. Please try again in a moment.', code: 'AI_RATE_LIMITED' },
         { status: 503 }
       );
     }
@@ -137,11 +175,44 @@ Respond with JSON only.`;
   }
 }
 
+/**
+ * Attempt to repair truncated JSON by closing any open brackets/braces
+ */
+function repairTruncatedJson(json) {
+  // Remove any trailing incomplete key-value pairs
+  let repaired = json.replace(/,\s*"[^"]*"?\s*:?\s*$/, '');
+  repaired = repaired.replace(/,\s*$/, '');
+
+  // Count open vs close brackets
+  const opens = { '{': 0, '[': 0 };
+  const closes = { '}': '{', ']': '[' };
+
+  for (const char of repaired) {
+    if (char in opens) opens[char]++;
+    if (char in closes) opens[closes[char]]--;
+  }
+
+  // Close any remaining open brackets in reverse order
+  const stack = [];
+  for (const char of repaired) {
+    if (char === '{' || char === '[') stack.push(char);
+    if (char === '}' || char === ']') stack.pop();
+  }
+
+  while (stack.length > 0) {
+    const open = stack.pop();
+    repaired += open === '{' ? '}' : ']';
+  }
+
+  return repaired;
+}
+
 export async function GET() {
   return Response.json({
     service: 'BaliBuddy Itinerary Generator',
-    status: 'active',
-    version: '1.0.0',
+    status: process.env.ANTHROPIC_API_KEY ? 'active' : 'missing_api_key',
+    model: 'claude-haiku-4-5-20251001',
+    version: '2.1.0',
     endpoints: {
       POST: {
         description: 'Generate a personalized Bali itinerary',

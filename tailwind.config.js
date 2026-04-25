@@ -27,8 +27,8 @@ module.exports = {
         }
       },
       fontFamily: {
-        display: ['DM Serif Display', 'serif'],
-        body: ['Plus Jakarta Sans', 'system-ui', 'sans-serif'],
+        display: ['var(--font-display)', 'DM Serif Display', 'serif'],
+        body: ['var(--font-jakarta)', 'Plus Jakarta Sans', 'system-ui', 'sans-serif'],
       },
     },
   },

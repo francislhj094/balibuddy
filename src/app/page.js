@@ -1,13 +1,24 @@
 // src/app/page.js
+import dynamic from 'next/dynamic';
 import Hero from '@/components/Hero';
 import TrustBar from '@/components/TrustBar';
 import ProblemSection from '@/components/ProblemSection';
-import PriceGuide from '@/components/PriceGuide';
-import HowItWorks from '@/components/HowItWorks';
-import Testimonials from '@/components/Testimonials';
-import Checklist from '@/components/Checklist';
-import WhatsAppCTA from '@/components/WhatsAppCTA';
 import StructuredData, { faqSchema, localBusinessSchema, howToSchema } from '@/components/StructuredData';
+
+// Dynamic imports for below-fold components — reduces initial JS bundle
+const TripPlanner = dynamic(() => import('@/components/TripPlanner'), {
+  loading: () => <div className="py-24 text-center text-slate-600">Loading planner...</div>,
+});
+const PriceGuide = dynamic(() => import('@/components/PriceGuide'), {
+  loading: () => <div className="py-24 text-center text-slate-600">Loading prices...</div>,
+});
+const Services = dynamic(() => import('@/components/Services'), {
+  loading: () => <div className="py-24 text-center text-slate-600">Loading services...</div>,
+});
+const HowItWorks = dynamic(() => import('@/components/HowItWorks'));
+const Testimonials = dynamic(() => import('@/components/Testimonials'));
+const Checklist = dynamic(() => import('@/components/Checklist'));
+const WhatsAppCTA = dynamic(() => import('@/components/WhatsAppCTA'));
 
 const homeFaqs = [
   {
@@ -52,7 +63,9 @@ export default function Home() {
       <Hero />
       <TrustBar />
       <ProblemSection />
+      <TripPlanner />
       <PriceGuide />
+      <Services />
       <HowItWorks />
       <Testimonials />
       <Checklist />
